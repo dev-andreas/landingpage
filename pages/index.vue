@@ -5,7 +5,7 @@
     <AboutMe />
     <Service />
     <Technologies />
-    Ich entwickle Webseiten für Unternehmen und Personen.
+    <Projects />
   </div>
 </template>
 
@@ -15,6 +15,7 @@
   import Technologies from "../components/indexPage/Technologies.vue"
   import AboutMe from "../components/indexPage/AboutMe.vue" 
   import Service from "../components/indexPage/Service.vue"
+  import Projects from "../components/indexPage/Projects.vue"
   export default {
     components: {
       HeaderPart,
@@ -22,6 +23,7 @@
       Technologies,
       AboutMe,
       Service,
+      Projects,
     },
     data() {
       return {

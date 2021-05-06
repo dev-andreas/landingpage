@@ -14,7 +14,7 @@
         <div class="text-center flex">
           <transition name="rise" appear>
             <div
-              class="h-8 border-2 border-l-4 border-font-dark"
+              class="h-8 border-2 border-l-4 border-font-dark bgg"
               :style="{
                 width: (item.votes / mostVoted) * 32 + 'rem',
               }"
@@ -50,5 +50,9 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.bgg {
+    background-image: url('~assets/images/diagonal_line.svg');
+    background-size: 1rem;
+}
 </style>

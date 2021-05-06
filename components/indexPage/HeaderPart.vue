@@ -68,7 +68,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .bgg {
   background-image: url('~assets/images/coded.jpg');
   background-size: 100rem;

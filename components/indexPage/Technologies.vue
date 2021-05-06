@@ -1,5 +1,5 @@
 <template>
-  <article class="flex flex-col items-center pt-10">
+  <article class="flex flex-col items-center pt-10 mb-40">
       <h2 class="text-6xl font-extralight pb-3 px-1 border-b-4 border-primary-600">Technologien</h2>
       <p class="text-3xl mt-6 font-light">Der Technology Stack. Hier kenne ich mich aus:</p>
       <div class="flex gap-6 mt-20 mx-32">
@@ -63,5 +63,5 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 </style>

@@ -1,5 +1,6 @@
 <template>
     <article class="flex flex-col items-center pt-10 px-10 mb-40">
+        <q class="my-52 text-4xl font-light">Ich entwickle Webseiten für Unternehmen und Personen.</q>
         <h2 class="text-6xl font-extralight pb-3 px-1 border-b-4 border-primary-600">Über mich</h2>
         <div class="flex gap-20 items-center justify-center mt-20">
             <div class="flex flex-col items-center">
