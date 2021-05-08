@@ -4,11 +4,20 @@
     @mouseleave="hover = false"
     class="bgg w-80 h-60 p-5 bg-repeat bg-clip-content border border-primary-600 flex flex-col justify-center items-center"
   >
-    <div v-if="!hover" class="flex flex-col justify-center items-center">
-      <img :src="logo" :alt="alt" />
-      <p class="text-2xl font-bold">{{ title }}</p>
-    </div>
-    <p v-else class="text-lg text-center">{{ text }}</p>
+    <transition name="slide" mode="out-in">
+      <div v-if="!hover" key="nonhover" class="flex flex-col justify-center items-center">
+        <img :src="logo" :alt="alt" class="w-40" />
+        <p class="text-2xl font-bold">{{ title }}</p>
+      </div>
+      <div v-else key="hover" class="flex flex-col justify-center items-center">
+        <p class="text-lg text-center">{{ text }}</p>
+        <a
+          :href="link.url"
+          class="mt-2 font-bold hover:text-primary-500 transition ease-out duration-200"
+          >{{ link.name }}</a
+        >
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -17,7 +26,6 @@ export default {
   props: {
     logo: {
       type: String,
-      default: "",
     },
     alt: {
       type: String,
@@ -31,6 +39,10 @@ export default {
       type: String,
       default: "text",
     },
+    link: {
+      type: Object,
+      default: "",
+    },
   },
   data() {
     return {
@@ -42,7 +54,8 @@ export default {
 
 <style scoped>
 .bgg {
-    background-image: url('~assets/images/diagonal_line.svg');
-    background-size: 1rem;
+  background-image: url("~assets/images/diagonal_line.svg");
+  background-size: 1rem;
 }
+
 </style>

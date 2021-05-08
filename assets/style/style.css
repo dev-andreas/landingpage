@@ -27,3 +27,18 @@ body {
 .tinted {
     backdrop-filter: blur(10px);
 }
+
+/* ## Vue animations ## */
+
+.slide-enter-active {
+    @apply transition-all ease-out duration-300;
+}
+.slide-leave-active {
+    @apply transition-all ease-out duration-300;
+}
+.slide-enter, .slide-leave-to {
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+

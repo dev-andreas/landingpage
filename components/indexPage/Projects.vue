@@ -11,21 +11,30 @@
     <p class="mt-10 mb-5 font-bold">
       Berühre die einzelnen Kästen, um mehr zu erfahren:
     </p>
-    <div class="flex gap-20">
+    <div class="flex flex-wrap gap-20">
       <ProjectBox
-        img=""
-        title="Irgendwas"
-        text="Irgendein schäbiges Project, welches ich mir aus dem A!$*@ gezogen habe."
+        :logo="require('../../assets/images/external/cryptoeditor.png')"
+        title="cryptoeditor"
+        text="Ein Programm um Passwörter und Dateien zu verschlüsseln."
+        :link="{
+          url: 'https://github.com/dev-andreas/cryptoeditor',
+          name: 'Source code',
+        }"
       />
-       <ProjectBox
-        img=""
-        title="Irgendwas"
+      <ProjectBox
+        :logo="require('../../assets/images/external/pollapp.svg')"
+        alt="Pollapp"
+        title="Pollapp"
         text="Irgendein schäbiges Project, welches ich mir aus dem A!$*@ gezogen habe."
+        :link="{
+          url: 'https://github.com/dev-andreas/pollapp',
+          name: 'Source code',
+        }"
       />
-       <ProjectBox
-        img=""
+      <ProjectBox
         title="Irgendwas"
         text="Irgendein schäbiges Project, welches ich mir aus dem A!$*@ gezogen habe."
+        :link="{ url: 'some url', name: 'Mehr erfahren' }"
       />
     </div>
   </article>
