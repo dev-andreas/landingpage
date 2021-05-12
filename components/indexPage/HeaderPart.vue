@@ -1,5 +1,5 @@
 <template>
-  <header class="bgg">
+  <header class="bg">
     <IntersectionObserver
       sentinal-name="headerIntersection"
       @intersecting="changeIntersection"
@@ -11,13 +11,13 @@
       <div>
         <div class="flex items-center">
           <img
-            src="../../assets/images/head.svg"
+            src="../../assets/images/lightbulb_blue.svg"
             alt="Primary Keyword"
-            class="w-72 mr-5 mb-3 transform hover:scale-110 transition ease-out duration-500"
+            class="h-48 mr-5 mb-3 transform hover:scale-110 transition ease-out duration-500"
           />
           <div>
             <h1 class="text-6xl font-bold tracking-wider text-primary-600">
-              NAME
+              LUMEN DEV
             </h1>
             <h3 class="text-3xl mt-3 font-light text-font-light">
               Webentwickler und Freelancer aus Ulm.
@@ -69,8 +69,17 @@ export default {
 </script>
 
 <style scoped>
-.bgg {
+.bg {
   background-image: url('~assets/images/coded.jpg');
-  background-size: 100rem;
+  background-repeat: no-repeat;
+  background-size: 70rem;
+  background-color: #1f1d17;
 }
+
+@media (min-width: 1024px) {
+  .bg {
+    background-size: 100rem;
+  }
+}
+
 </style>

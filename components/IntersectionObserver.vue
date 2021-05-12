@@ -11,6 +11,7 @@ export default {
       required: true,
     },
   },
+  emits: ['intersecting'],
   data() {
     return {
       isIntersectingElement: false,

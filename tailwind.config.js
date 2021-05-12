@@ -18,7 +18,7 @@ module.exports = {
         },
         backg: {
           light: '#fcf9f1',
-          lighttrans: '#fcf9f166',
+          lighttrans: '#fcf9f188',
           dark: '#1f1d17',
         },
         font: {
@@ -27,7 +27,11 @@ module.exports = {
         }
       },
       fontFamily: {
-        body: ['Nunito'],
+        sans: ["Quicksand"],
+        serif: ["Quicksand"],
+        mono: ["Quicksand"],
+        display: ["Quicksand"],
+        body: ["Quicksand"]
       },
       stroke: theme => ({
         'primary': theme('colors.primary'),

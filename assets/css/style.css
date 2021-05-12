@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+input {
+    @apply bg-transparent focus:outline-none;
+}
+
+textarea {
+    @apply bg-transparent focus:outline-none;
+}
+
+body {
+    @apply bg-backg-light;
+}
+
+* {
+    @apply text-font-dark
+}
+
+.btn {
+    @apply p-1 tracking-wider;
+}
+
+.btn-primary {
+    @apply btn font-bold border border-primary-600 rounded-sm hover:bg-primary-600 hover:text-white transition ease-out duration-200;
+}
+
+.inpt {
+    @apply border-b border-font-dark w-52 py-1 hover:bg-backg-light focus:bg-backg-light focus:border-primary-400 transition ease-out duration-200;
+}
+
+.tbox {
+    @apply border border-font-dark hover:bg-backg-light focus:bg-backg-light focus:border-primary-400 transition ease-out duration-200;
+}
+.framework {
+    @apply w-28 xl:w-32 h-28 xl:h-32 flex flex-col items-center justify-end border-b-2 border-font-dark m-2 transform hover:-translate-y-1 transition ease-out duration-200;
+}
+
+.tinted {
+    backdrop-filter: blur(10px);
+}
+
+/* ## Vue animations ## */
+
+.slide-top-enter-active {
+    @apply transition-all ease-out duration-300;
+}
+.slide-top-leave-active {
+    @apply transition-all ease-out duration-300;
+}
+.slide-top-enter, .slide-top-leave-to {
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.slide-bottom-enter-active {
+    @apply transition-all ease-out duration-300;
+}
+.slide-bottom-leave-active {
+    @apply transition-all ease-out duration-300;
+}
+.slide-bottom-enter, .slide-bottom-leave-to {
+  transform: translateY(-10px);
+  opacity: 0;
+}
+
+.slide-right-enter-active {
+    @apply transition-all ease-out duration-300;
+}
+.slide-right-leave-active {
+    @apply transition-all ease-out duration-300;
+}
+.slide-right-enter, .slide-right-leave-to {
+  transform: translateX(-10px);
+  opacity: 0;
+}
+
+.slide-left-enter-active {
+    @apply transition-all ease-out duration-300;
+}
+.slide-left-leave-active {
+    @apply transition-all ease-out duration-300;
+}
+.slide-left-enter, .slide-left-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}

@@ -7,13 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="100mm"
-   height="100mm"
-   viewBox="0 0 100 100"
+   width="130.68608mm"
+   height="118.82534mm"
+   viewBox="0 0 130.68608 118.82534"
    version="1.1"
    id="svg8"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)"
-   sodipodi:docname="pollapp.svg">
+   sodipodi:docname="mail.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -24,14 +24,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="4.0210253"
-     inkscape:cy="231.77642"
+     inkscape:cx="121.46933"
+     inkscape:cy="171.36253"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
-     inkscape:pagecheckerboard="true"
-     inkscape:showpageshadow="false"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-smooth-nodes="true"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -40,7 +42,13 @@
      inkscape:window-height="1001"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid870"
+       originx="3.3239517e-07"
+       originy="-4.0997779e-09" />
+  </sodipodi:namedview>
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -49,7 +57,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -57,21 +65,17 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <rect
-       style="opacity:0.998075;fill:#4e4b44;fill-opacity:1;fill-rule:evenodd;stroke:#4e4b44;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect1054"
-       width="28.135386"
-       height="28.135386"
-       x="66.011223"
-       y="62.471157" />
     <path
-       style="fill:none;stroke:#4e4b44;stroke-width:2.117;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 9.7404554,90.606545 v -28.13539 l 28.1353906,28.13539 v -56.27077 l 28.135382,28.13538 V 6.2003894 L 94.14662,34.335775"
-       id="path1092"
-       sodipodi:nodetypes="ccccccc" />
+       id="path868"
+       style="fill:#008fff;stroke:#008fff;stroke-width:0.396875;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+       d="M 0.66145965,39.430703 V 118.16388 H 130.02462 V 39.430703 l -64.681836,38.76921 z" />
     <path
-       style="fill:none;stroke:#4e4b44;stroke-width:1.587;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 0.26319044,99.736809 99.73681,0.26319044"
-       id="path1076" />
+       id="path877"
+       style="fill:none;fill-opacity:1;stroke:#008fff;stroke-width:0.396875;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 65.342774,0.66148901 0.66146775,39.430703 65.342774,78.199913 130.02461,39.430703 Z" />
+    <path
+       style="fill:none;stroke:#f6f3eb;stroke-width:0.396875;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 0.66145975,118.16387 65.342784,78.199903 130.02461,118.16387"
+       id="path875" />
   </g>
 </svg>

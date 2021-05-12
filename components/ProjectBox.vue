@@ -1,28 +1,41 @@
 <template>
-  <div
-    @mouseover="hover = true"
-    @mouseleave="hover = false"
-    class="bgg w-80 h-60 p-5 bg-repeat bg-clip-content border border-primary-600 flex flex-col justify-center items-center"
+  <IntersectionAnimation
+    startingClass="opacity-0 translate-y-10"
+    endingClass="opacity-100 translate-x-0"
+    :sentinalName="title"
   >
-    <transition name="slide" mode="out-in">
-      <div v-if="!hover" key="nonhover" class="flex flex-col justify-center items-center">
-        <img :src="logo" :alt="alt" class="w-40" />
-        <p class="text-2xl font-bold">{{ title }}</p>
-      </div>
-      <div v-else key="hover" class="flex flex-col justify-center items-center">
-        <p class="text-lg text-center">{{ text }}</p>
-        <a
-          :href="link.url"
-          class="mt-2 font-bold hover:text-primary-500 transition ease-out duration-200"
-          >{{ link.name }}</a
+    <div
+      @mouseover="hover = true"
+      @mouseleave="hover = false"
+      class="bgg w-80 h-60 p-5 bg-repeat bg-clip-content border border-primary-600 flex flex-col justify-center items-center"
+    >
+      <transition name="slide-top" mode="out-in">
+        <div
+          v-if="!hover"
+          key="nonhover"
+          class="flex flex-col justify-center items-center"
         >
-      </div>
-    </transition>
-  </div>
+          <img :src="logo" :alt="alt" class="h-32" />
+          <p class="text-2xl font-bold mt-2">{{ title }}</p>
+        </div>
+        <div
+          v-else
+          key="hover"
+          class="flex flex-col justify-center items-center"
+        >
+          <slot>Project</slot>
+        </div>
+      </transition>
+    </div>
+  </IntersectionAnimation>
 </template>
 
 <script>
+import IntersectionAnimation from "./IntersectionAnimation.vue";
 export default {
+  components: {
+    IntersectionAnimation,
+  },
   props: {
     logo: {
       type: String,
@@ -34,14 +47,6 @@ export default {
     title: {
       type: String,
       default: "title",
-    },
-    text: {
-      type: String,
-      default: "text",
-    },
-    link: {
-      type: Object,
-      default: "",
     },
   },
   data() {
@@ -57,5 +62,4 @@ export default {
   background-image: url("~assets/images/diagonal_line.svg");
   background-size: 1rem;
 }
-
 </style>

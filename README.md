@@ -21,4 +21,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ## Todo
 
-- parallax background
+- responsive
+- logo
+- brand name
+- contact form image
+- footer
+- backend email automation
