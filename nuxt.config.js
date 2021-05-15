@@ -34,6 +34,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-fonts',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -47,10 +48,34 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    /*
+    publicPath: '/assets/',
+    extend (config, { isDev, isClient }) {
+      if (isDev && isClient) {
+        config.module.rules.push({
+          enforce: 'pre',
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
+          exclude: /(node_modules)/
+        })
+      }
+    },
+    */
+    
+    
     babel:{
       plugins: [
         ['@babel/plugin-proposal-private-methods', { loose: true }]
       ]
+    }
+  },
+
+  googleFonts: {
+    download: false,
+    families: {
+      Quicksand: {
+        wght: [300, 400, 500, 600, 700]
+      },
     }
   }
 }

@@ -3,6 +3,7 @@
     startingClass="opacity-0 translate-y-10"
     endingClass="opacity-100 translate-x-0"
     :sentinalName="title"
+    class="mt-5 mx-5 sm:mt-10 sm:mx-10"
   >
     <div
       @mouseover="hover = true"

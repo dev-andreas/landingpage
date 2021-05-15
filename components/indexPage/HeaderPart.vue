@@ -1,5 +1,5 @@
 <template>
-  <header class="bg">
+  <header class="bg bg-fixed">
     <IntersectionObserver
       sentinal-name="headerIntersection"
       @intersecting="changeIntersection"
@@ -9,25 +9,25 @@
       :class="[intersects ? 'h-screen' : 'h-80']"
     >
       <div>
-        <div class="flex items-center">
+        <div class="flex items-center justify-center px-4">
           <img
             src="../../assets/images/lightbulb_blue.svg"
             alt="Primary Keyword"
-            class="h-48 mr-5 mb-3 transform hover:scale-110 transition ease-out duration-500"
+            class="h-32 md:h-48 mr-5 mb-3 transform hover:scale-110 transition ease-out duration-500"
           />
           <div>
-            <h1 class="text-6xl font-bold tracking-wider text-primary-600">
-              LUMEN DEV
+            <h1 class="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold tracking-wider text-primary-600">
+              LUMEN
             </h1>
-            <h3 class="text-3xl mt-3 font-light text-font-light">
+            <h3 class="text-sm xs:text-lg sm:text-2xl md:text-3xl mt-3 font-light text-font-light">
               Webentwickler und Freelancer aus Ulm.
             </h3>
-            <p class="text-sm text-primary-600">Andreas Gerasimow</p>
+            <p class="text-xs sm:text-sm text-primary-600">Andreas Gerasimow</p>
           </div>
         </div>
       </div>
       <div
-        class="animate-bounce transition ease-out duration-200 delay-200"
+        class="animate-bounce transition ease-out duration-200 delay-200 mt-5"
         :class="[intersects ? 'opacity-100' : 'opacity-0']"
       >
         <svg
@@ -71,15 +71,11 @@ export default {
 <style scoped>
 .bg {
   background-image: url('~assets/images/coded.jpg');
-  background-repeat: no-repeat;
-  background-size: 70rem;
-  background-color: #1f1d17;
-}
 
-@media (min-width: 1024px) {
-  .bg {
-    background-size: 100rem;
-  }
+  /* Center and scale the image nicely */
+  background-position: top-left;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 </style>

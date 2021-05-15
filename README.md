@@ -21,9 +21,6 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ## Todo
 
-- responsive
-- logo
-- brand name
-- contact form image
-- footer
-- backend email automation
+
+- projects bug
+- rechtschreibfehler korrigieren

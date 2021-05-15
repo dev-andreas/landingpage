@@ -1,3 +1,5 @@
+const { screens } = require('tailwindcss/defaultTheme')
+
 module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
@@ -26,6 +28,10 @@ module.exports = {
           dark: '#4e4b44',
         }
       },
+      scale: {
+        '70': '.7',
+        '60': '.6',
+      },
       fontFamily: {
         sans: ["Quicksand"],
         serif: ["Quicksand"],
@@ -53,7 +59,14 @@ module.exports = {
         '180': '45rem',
         '192': '48rem',
         '204': '51rem',
+        '216': '54rem',
+        '228': '57rem',
       }
+    },
+    screens: {
+      '2xs': '360px',
+      'xs': '414px',
+      ...screens,
     },
   },
   variants: {
