@@ -63,7 +63,7 @@
         startingClass="opacity-0 translate-x-32"
         endingClass="opacity-100 translate-x-0"
         sentinalName="service-title"
-        class="flex flex-col items-center transform scale-60 xs:scale-75 sm:scale-100 lg:scale-75 xl:scale-100 w-132 h-72 lg:w-108 xl:w-132" 
+        class="flex flex-col items-center sm:mt-10 lg:mt-0 transform scale-60 xs:scale-75 sm:scale-100 lg:scale-75 xl:scale-100 w-132 h-72 lg:w-108 xl:w-132" 
       >
           <StatGraph :items="items"/>
       </IntersectionAnimation>

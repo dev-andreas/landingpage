@@ -29,6 +29,7 @@
       <ProjectBox
         :logo="require('../../assets/images/external/cryptoeditor.svg')"
         title="cryptoeditor"
+        :index="0"
       >
         <p class="text-center">
           Ein Programm um Passwörter und Dateien zu verschlüsseln.
@@ -43,6 +44,7 @@
         :logo="require('../../assets/images/external/pollapp.svg')"
         alt="Pollapp"
         title="Pollapp"
+        :index="1"
       >
         <p class="text-center">Eine Web-App um anonyme Umfragen zu starten.</p>
         <a
@@ -53,8 +55,7 @@
       </ProjectBox>
       <ProjectBox
         title="Irgendwas"
-        text="Irgendein schäbiges Project, welches ich mir aus dem A!$*@ gezogen habe."
-        :link="{ url: 'some url', name: 'Mehr erfahren' }"
+        :index="2"
       />
     </div>
   </article>
@@ -63,11 +64,22 @@
 <script>
 import ProjectBox from "../ProjectBox.vue";
 import IntersectionAnimation from "../../components/IntersectionAnimation.vue";
+
 export default {
   components: {
     ProjectBox,
     IntersectionAnimation,
   },
+  data() {
+    return {
+
+    }
+  },
+  computed: {
+    projectIndex() {
+      return this.$store.state.projectIndex;
+    },
+  }
 };
 </script>
 

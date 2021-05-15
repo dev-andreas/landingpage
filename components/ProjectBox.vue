@@ -6,13 +6,13 @@
     class="mt-5 mx-5 sm:mt-10 sm:mx-10"
   >
     <div
-      @mouseover="hover = true"
-      @mouseleave="hover = false"
       class="bgg w-80 h-60 p-5 bg-repeat bg-clip-content border border-primary-600 flex flex-col justify-center items-center"
+      @mouseover="onHover()"
+      @mouseleave="onLeave()"
     >
       <transition name="slide-top" mode="out-in">
         <div
-          v-if="!hover"
+          v-if="!showSlot"
           key="nonhover"
           class="flex flex-col justify-center items-center"
         >
@@ -49,11 +49,32 @@ export default {
       type: String,
       default: "title",
     },
+    index: {
+      type: Number,
+    },
   },
   data() {
     return {
       hover: false,
     };
+  },
+  methods: {
+    onHover() {
+      this.hover = true;
+      this.$store.commit("projects/setProjectIndex", this.index);
+      console.log("hover");
+    },
+    onLeave() {
+      this.hover = false;
+    },
+  },
+  computed: {
+    showSlot() {
+      return (
+        this.hover &&
+        this.index === this.$store.getters["projects/getProjectIndex"]
+      );
+    },
   },
 };
 </script>

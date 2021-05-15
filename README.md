@@ -24,3 +24,4 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 - projects bug
 - rechtschreibfehler korrigieren
+- more margin on graph and technologies

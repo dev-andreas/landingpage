@@ -3,9 +3,9 @@ export const state = () => ({
 });
 
 export const mutations = {
-    setProjectIndex(state, payload) {
-        state.projectsIndex = payload;
-    }
+    setProjectIndex(state, index) {
+        state.projectIndex = index
+    },
 };
 
 export const getters = {
