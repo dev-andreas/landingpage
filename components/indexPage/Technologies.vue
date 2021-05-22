@@ -33,19 +33,19 @@
             <p class="text-xs sm:text-lg xl:text-xl font-bold my-1">Django</p>
           </div>
           <div class="framework">
-            <img src="../../assets/images/vue.svg" alt="Vue" class="h-8 xs:h-10 sm:h-16" />
+            <img src="../../assets/images/vue.svg" alt="Vue.js" class="h-8 xs:h-10 sm:h-16" />
             <p class="text-xs sm:text-lg xl:text-xl font-bold my-1">Vue.js</p>
           </div>
           <div class="framework">
-            <img src="../../assets/images/nuxt.svg" alt="Nuxt" class="h-8 xs:h-10 sm:h-16" />
+            <img src="../../assets/images/nuxt.svg" alt="Nuxt.js" class="h-8 xs:h-10 sm:h-16" />
             <p class="text-xs sm:text-lg xl:text-xl font-bold my-1">Nuxt.js</p>
           </div>
           <div class="framework">
-            <img src="../../assets/images/tailwindcss.svg" alt="Tailwind" class="h-8 xs:h-10 sm:h-16" />
+            <img src="../../assets/images/tailwindcss.svg" alt="Tailwind CSS" class="h-8 xs:h-10 sm:h-16" />
             <p class="text-xs sm:text-lg xl:text-xl font-bold my-1">Tailwind</p>
           </div>
           <div class="framework">
-            <img src="../../assets/images/pgsql.svg" alt="pgSQL" class="h-8 xs:h-10 sm:h-16" />
+            <img src="../../assets/images/pgsql.svg" alt="PostgreSQL" class="h-8 xs:h-10 sm:h-16" />
             <p class="text-xs sm:text-lg xl:text-xl font-bold my-1">pgSQL</p>
           </div>
           <div class="framework">
@@ -53,7 +53,7 @@
             <p class="text-xs sm:text-lg xl:text-xl font-bold my-1">Git</p>
           </div>
           <div class="framework">
-            <img src="../../assets/images/jfx.svg" alt="Jfx" class="h-8 xs:h-10 sm:h-16" />
+            <img src="../../assets/images/jfx.svg" alt="JavaFX" class="h-8 xs:h-10 sm:h-16" />
             <p class="text-xs sm:text-lg xl:text-xl font-bold my-1">JavaFX</p>
           </div>
         </div>

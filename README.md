@@ -21,7 +21,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ## Todo
 
-
-- projects bug
-- rechtschreibfehler korrigieren
-- more margin on graph and technologies
+- navbar bug
+- header vor 'Über mich'
+- favicon
+- performance test
+- sitemap
+- schema markup

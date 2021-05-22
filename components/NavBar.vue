@@ -1,16 +1,16 @@
 <template>
   <nav class="h-0 sticky top-0 z-50">
     <div
-      class="flex flex-col md:flex-row justify-start px-5 bg-backg-light tinted shadow-sm"
+      class="flex flex-col md:flex-row justify-between px-5 bg-backg-light tinted shadow-sm"
     >
       <div class="flex justify-between items-center">
         <div class="flex justify-center items-center">
           <img
-            src="../assets/images/lightbulb_black.svg"
-            alt="Logo"
+            src="../assets/images/lumen_logo_black.svg"
+            alt="Lumen Logo"
             class="h-10 my-2"
           />
-          <p class="text-2xl font-light tracking-wider ml-2">LUMEN</p>
+          <p class="text-xl font-light tracking-wider ml-2">LUMEN DEV</p>
         </div>
         <!-- burger -->
         <div
@@ -33,7 +33,7 @@
         </div>
       </div>
       <div
-        class="flex flex-col md:flex-row md:ml-5 justify-between items-center transform transition-all ease-out duration-500 w-full"
+        class="flex flex-col md:flex-row md:ml-5 items-center transform transition-all ease-out duration-500"
         :class="[open || !mobileView ? 'max-h-64' : 'max-h-0 scale-0']"
       >
         <ul class="flex flex-col md:flex-row items-center">
@@ -66,7 +66,6 @@
 
 <script>
 export default {
-  name: "Joke",
   props: {
     links: Array,
   },

@@ -1,7 +1,7 @@
 <template>
   <div class="transition ease-out duration-1000 transform" :class="[ intersected ? endingClass : startingClass ]">
     <div class="w-full absolute top-2/3 pointer-events-none">
-      <IntersectionObserver :sentinalName="sentinalName" @intersecting="intersected=true" class="bg-red-500"/>
+      <IntersectionObserver :sentinalName="sentinalName" @intersecting="intersected=true"/>
     </div>
     <slot></slot>
   </div>

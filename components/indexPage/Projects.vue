@@ -28,6 +28,7 @@
     <div class="flex items-center justify-center flex-wrap">
       <ProjectBox
         :logo="require('../../assets/images/external/cryptoeditor.svg')"
+        alt="cryptoeditor"
         title="cryptoeditor"
         :index="0"
       >

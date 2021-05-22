@@ -62,7 +62,6 @@ export default {
     onHover() {
       this.hover = true;
       this.$store.commit("projects/setProjectIndex", this.index);
-      console.log("hover");
     },
     onLeave() {
       this.hover = false;

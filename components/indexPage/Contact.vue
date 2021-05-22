@@ -33,7 +33,7 @@
           <img
             class="w-32 lg:w-64 h-32 lg:h-64 transform hover:scale-105 transition ease-out duration-300"
             src="../../assets/images/mail.svg"
-            alt="mail"
+            alt="Mail"
           />
         </div>
       </IntersectionAnimation>

@@ -11,17 +11,17 @@
       <div>
         <div class="flex items-center justify-center px-4">
           <img
-            src="../../assets/images/lightbulb_blue.svg"
-            alt="Primary Keyword"
+            src="../../assets/images/lumen_logo_light.svg"
+            alt="Lumen Logo"
             class="h-32 md:h-48 mr-5 mb-3 transform hover:scale-110 transition ease-out duration-500"
           />
           <div>
             <h1 class="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold tracking-wider text-primary-600">
-              LUMEN
+              LUMEN DEV
             </h1>
-            <h3 class="text-sm xs:text-lg sm:text-2xl md:text-3xl mt-3 font-light text-font-light">
+            <h2 class="text-sm xs:text-lg sm:text-2xl md:text-3xl mt-3 font-light text-font-light">
               Webentwickler und Freelancer aus Ulm.
-            </h3>
+            </h2>
             <p class="text-xs sm:text-sm text-primary-600">Andreas Gerasimow</p>
           </div>
         </div>

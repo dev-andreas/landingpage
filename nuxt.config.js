@@ -1,20 +1,26 @@
+const axios = require('axios');
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'landingpage',
+    title: 'Lumen Dev | Webentwickler und Freelancer aus Ulm.',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      {
+        hid: 'description', name: 'description', content:
+          `
+      
+      ` }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
     ]
   },
 
@@ -41,13 +47,16 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/sitemap'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    /*
     publicPath: '/assets/',
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
@@ -59,9 +68,10 @@ export default {
         })
       }
     },
-    
-    
-    babel:{
+    */
+
+
+    babel: {
       plugins: [
         ['@babel/plugin-proposal-private-methods', { loose: true }]
       ]
@@ -75,5 +85,16 @@ export default {
         wght: [300, 400, 500, 600, 700]
       },
     }
-  }
+  },
+
+  sitemap: {
+    hostname: 'https://dev-andreas.github.io',
+    gzip: true,
+    /*
+    exclude: [
+      '/secret',
+      '/admin/**'
+    ],
+    */
+  },
 }
