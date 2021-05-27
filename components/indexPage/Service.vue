@@ -30,7 +30,7 @@
           </p>
           <p class="text-md sm:text-xl lg:text-2xl mt-5 font-light">
             Ich entwickle Webseiten für Unternehmen und Personen. Benötigen Sie
-            eine professionelle Landingpage, Homepage oder eine spezielle
+            eine professionelle Landingpage, Website oder eine spezielle
             Web-App? Dann sind Sie hier genau richtig.
           </p>
         </div>
@@ -54,7 +54,7 @@
             spielt eine wichtige Rolle: Das Design sollte einfach und schlicht
             gehalten werden. Dadurch ist der Inhalt leichter zu verdauen. Keine
             unnötige große Anzahl von komplexen Grafiken und keine
-            Pop-up-Fenster, diese lassen die Webseite länger laden und
+            Pop-up-Fenster, diese lassen die Website länger laden und
             irritieren die Benutzer.
           </p>
         </div>
