@@ -14,7 +14,7 @@ export default {
   head: {
     titleTemplate: 'Lumen Dev | %s',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'de'
     },
     meta: [
       { charset: 'utf-8' },
