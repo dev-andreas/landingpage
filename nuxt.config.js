@@ -8,7 +8,7 @@ export default {
   head: {
     title: 'Lumen Dev | Webentwickler und Freelancer aus Ulm.',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'de'
     },
     meta: [
       { charset: 'utf-8' },
