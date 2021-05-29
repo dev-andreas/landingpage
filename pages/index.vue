@@ -43,7 +43,7 @@ export default {
   head: {
     title: "Webentwickler und Freelancer aus Ulm.",
     htmlAttrs: {
-      lang: "en",
+      lang: "de",
     },
     meta: [
       { charset: "utf-8" },
