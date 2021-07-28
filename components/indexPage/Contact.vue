@@ -10,7 +10,7 @@
       class="flex flex-col items-center"
     >
       <h2
-        class="text-4xl sm:text-6xl font-extralight pb-3 px-1 border-b-4 border-primary-600"
+        class="text-4xl sm:text-6xl font-extralight pb-3 px-1 border-b border-primary-600"
       >
          Kontakt
       </h2>
@@ -87,7 +87,8 @@
               v-model="message"
             ></textarea>
           </label>
-          <div class="flex mt-5">
+        </div>
+         <div class="flex mt-5">
             <input
               class="btn-primary bg-transparent"
               type="button"
@@ -101,10 +102,9 @@
             </div>
           </div>
           <div class="mt-2">
-            <p class="text-primary-600">{{ response }}</p>
-            <p v-if="error" class="text-red-600">{{ Object.values(error)[0][0] }}</p>
+            <p class="text-primary-600 text-sm sm:text-base mx-3 sm:mx-0">{{ response }}</p>
+            <p v-if="error" class="text-red-600 text-sm sm:text-base mx-3 sm:mx-0">{{ error }}</p>
           </div>
-        </div>
       </IntersectionAnimation>
     </div>
   </article>
@@ -157,7 +157,11 @@ export default {
           this.response = "Nachricht gesendet. Ich melde mich.";
         })
         .catch((err) => {
-          this.error = err.response.data;
+          if (err.response.status >= 500) {
+            this.error = 'Es gibt Probleme mit dem Server. Bitte versuchen Sie, uns per Mail zu kontaktieren.'
+          } else {
+            this.error = Object.values(err.response.data)[0][0];
+          }
         })
         .finally(() => {
           this.loading = false;

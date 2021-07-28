@@ -2,7 +2,7 @@ const axios = require('axios');
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  target: 'server',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -90,11 +90,11 @@ export default {
   sitemap: {
     hostname: 'https://dev-andreas.github.io',
     gzip: true,
-    /*
+    
     exclude: [
-      '/secret',
-      '/admin/**'
+      '/datenschutz',
+      '/impressum',
     ],
-    */
+    
   },
 }

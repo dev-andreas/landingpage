@@ -7,7 +7,7 @@
       class="flex flex-col items-center"
     >
       <h2
-        class="text-4xl sm:text-6xl font-extralight pb-3 px-1 border-b-4 border-primary-600"
+        class="text-4xl sm:text-6xl font-extralight pb-3 px-1 border-b border-primary-600"
       >
         Projekte
       </h2>
@@ -27,10 +27,25 @@
     </IntersectionAnimation>
     <div class="flex items-center justify-center flex-wrap">
       <ProjectBox
+        :logo="require('../../assets/images/external/ultratec_logo.svg')"
+        alt="UltraTEC Anlagen"
+        title="UltraTEC Anlagen"
+        :index="0"
+      >
+        <p class="text-center">
+          Website von einem Unternehmen, welches Ultraschall-Entgratmaschinen herstellt.
+        </p>
+        <a
+          href="https://ultratec-anlagen.de"
+          class="font-bold hover:text-primary-600 transition ease-out duration-200 mt-1"
+          >Zur Website</a
+        >
+      </ProjectBox>
+      <ProjectBox
         :logo="require('../../assets/images/external/cryptoeditor.svg')"
         alt="cryptoeditor"
         title="cryptoeditor"
-        :index="0"
+        :index="1"
       >
         <p class="text-center">
           Ein Programm um Passwörter und Dateien zu verschlüsseln.
@@ -45,9 +60,9 @@
         :logo="require('../../assets/images/external/pollapp.svg')"
         alt="Pollapp"
         title="Pollapp"
-        :index="1"
+        :index="2"
       >
-        <p class="text-center">Eine Web-App um anonyme Umfragen zu starten.</p>
+        <p class="text-center">Eine Web-App für anonyme Umfragen.</p>
         <a
           href="https://github.com/dev-andreas/pollapp"
           class="font-bold hover:text-primary-600 transition ease-out duration-200 mt-1"
@@ -55,9 +70,18 @@
         >
       </ProjectBox>
       <ProjectBox
-        title="Irgendwas"
-        :index="2"
-      />
+        :logo="require('../../assets/images/external/md_logo.svg')"
+        alt="Markdown Blog"
+        title="Markdown Blog"
+        :index="3"
+      >
+        <p class="text-center">Eine Blog Web-App. Im Moment noch in der Entwicklung.</p>
+        <a
+          href="https://github.com/dev-andreas/pollapp"
+          class="font-bold hover:text-primary-600 transition ease-out duration-200 mt-1"
+          >Source Code</a
+        >
+      </ProjectBox>
     </div>
   </article>
 </template>

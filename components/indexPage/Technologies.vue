@@ -7,7 +7,7 @@
       class="flex flex-col items-center"
     >
       <h2
-        class="text-4xl sm:text-6xl font-extralight pb-3 px-1 border-b-4 border-primary-600"
+        class="text-4xl sm:text-6xl font-extralight pb-3 px-1 border-b border-primary-600"
       >
         Technologien
       </h2>
@@ -82,7 +82,7 @@ export default {
   data() {
     return {
       items: [
-        { name: "Python", votes: 75 },
+        { name: "Python", votes: 80 },
         { name: "JavaScript", votes: 50 },
         { name: "SQL", votes: 40 },
         { name: "Java SE", votes: 90 },

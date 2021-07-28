@@ -73,6 +73,7 @@ export default {
   background-image: url('~assets/images/coded.jpg');
 
   /* Center and scale the image nicely */
+  background-color: #333333;
   background-position: top-left;
   background-repeat: no-repeat;
   background-size: cover;

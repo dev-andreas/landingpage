@@ -21,6 +21,10 @@ import Service from "../components/indexPage/Service.vue";
 import Projects from "../components/indexPage/Projects.vue";
 import Contact from "../components/indexPage/Contact.vue";
 export default {
+  transition: {
+      name: "slide-bottom",
+      mode: "out-in",
+  },
   components: {
     HeaderPart,
     NavBar,
@@ -41,7 +45,6 @@ export default {
     };
   },
   head: {
-    title: "Webentwickler und Freelancer aus Ulm.",
     htmlAttrs: {
       lang: "de",
     },

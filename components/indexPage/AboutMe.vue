@@ -9,7 +9,7 @@
       sentinalName="about_me"
     >
       <h2
-        class="text-4xl sm:text-6xl font-extralight pb-3 px-1 border-b-4 border-primary-600"
+        class="text-4xl sm:text-6xl font-extralight pb-3 px-1 border-b border-primary-600"
       >
         Über mich
       </h2>

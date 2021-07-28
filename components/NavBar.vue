@@ -1,17 +1,24 @@
 <template>
   <nav class="h-0 sticky top-0 z-50">
     <div
-      class="flex flex-col md:flex-row justify-between px-5 bg-backg-light tinted shadow-sm"
+      class="
+        flex flex-col
+        md:flex-row
+        justify-between
+        px-5
+        bg-backg-light
+        tinted
+      "
     >
       <div class="flex justify-between items-center">
-        <div class="flex justify-center items-center">
+        <NuxtLink to="/" class="flex justify-center items-center">
           <img
             src="../assets/images/lumen_logo_black.svg"
             alt="Lumen Logo"
             class="h-10 my-2"
           />
           <p class="text-xl font-light tracking-wider ml-2">LUMEN DEV</p>
-        </div>
+        </NuxtLink>
         <!-- burger -->
         <div
           v-if="mobileView"
@@ -19,7 +26,16 @@
           @click="toggle"
         >
           <div
-            class="w-8 h-1 my-0.5 bg-font-dark transition ease-out duration-300 transform"
+            class="
+              w-8
+              h-1
+              my-0.5
+              bg-font-dark
+              transition
+              ease-out
+              duration-300
+              transform
+            "
             :class="[open ? '-rotate-45 translate-y-2' : 'rotate-0']"
           ></div>
           <div
@@ -27,16 +43,34 @@
             :class="[open ? 'opacity-0' : 'opacity-100']"
           ></div>
           <div
-            class="w-8 h-1 my-0.5 bg-font-dark transition ease-out duration-300 transform"
+            class="
+              w-8
+              h-1
+              my-0.5
+              bg-font-dark
+              transition
+              ease-out
+              duration-300
+              transform
+            "
             :class="[open ? 'rotate-45 -translate-y-2' : 'rotate-0']"
           ></div>
         </div>
       </div>
       <div
-        class="flex flex-col md:flex-row md:ml-5 items-center transform transition-all ease-out duration-500"
+        class="
+          flex flex-col
+          md:flex-row
+          md:ml-5
+          items-center
+          transform
+          transition-all
+          ease-out
+          duration-500
+        "
         :class="[open || !mobileView ? 'max-h-64' : 'max-h-0 scale-0']"
       >
-        <ul class="flex flex-col md:flex-row items-center">
+        <ul class="flex flex-col md:flex-row items-center mb-10 md:mb-0">
           <li
             v-for="link in links"
             :key="link.name"
@@ -44,21 +78,45 @@
           >
             <a
               :href="link.route"
-              class="tracking-wider text-xl font-bold md:font-normal md:text-sm"
+              class="
+                tracking-wider
+                py-1
+                text-xl
+                font-bold
+                md:font-normal
+                md:text-sm
+                border-b border-transparent
+                hover:border-primary-600
+                transition
+                ease-out
+                duration-200
+              "
               @click="open = false"
             >
               {{ link.name }}
             </a>
           </li>
+          <li class="md:ml-4 my-2 md:my-0">
+            <a
+              href="#contact"
+              class="
+                tracking-wider
+                py-1
+                text-xl text-primary-600
+                font-bold
+                md:text-sm
+                border-b border-transparent
+                hover:border-primary-600
+                transition
+                ease-out
+                duration-200
+              "
+              @click="open = false"
+            >
+              Kontakt
+            </a>
+          </li>
         </ul>
-        <a
-          href="#contact"
-          class="btn-primary"
-          :class="[mobileView ? 'my-5 ml-0' : 'my-0 ml-5']"
-          @click="open = false"
-        >
-          Kontakt
-        </a>
       </div>
     </div>
   </nav>

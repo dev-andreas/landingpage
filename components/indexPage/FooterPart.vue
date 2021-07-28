@@ -4,8 +4,8 @@
   >
     <div class="text">
       <p class="text-font-light">&copy; 2021 Andreas Gerasimow</p>
-      <a href="" class="text-primary-600 font-bold mr-2">Impressum</a>
-      <a href="" class="text-primary-600 font-bold">Datenschutzerklärung</a>
+      <NuxtLink to="/impressum" class="text-primary-600 font-bold mr-2">Impressum</NuxtLink>
+      <NuxtLink to="/datenschutz" class="text-primary-600 font-bold">Datenschutzerklärung</NuxtLink>
     </div>
     <div class="flex mt-5 lg:mt-0">
       <a href="https://github.com/dev-andreas" target="_blank" rel="noopener"
