@@ -12,8 +12,8 @@
    viewBox="0 0 63.499966 87.378533"
    version="1.1"
    id="svg8"
-   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)"
-   sodipodi:docname="lightbulb_blue.svg">
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="lumen_logo_blue.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="147.12411"
-     inkscape:cy="189.17482"
+     inkscape:zoom="1.4"
+     inkscape:cx="108.05409"
+     inkscape:cy="265.28579"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -36,11 +36,11 @@
      inkscape:snap-smooth-nodes="true"
      inkscape:snap-midpoints="true"
      inkscape:snap-nodes="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1001"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
-     inkscape:window-maximized="1"
+     inkscape:window-width="942"
+     inkscape:window-height="992"
+     inkscape:window-x="966"
+     inkscape:window-y="39"
+     inkscape:window-maximized="0"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -59,7 +59,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -102,7 +102,7 @@
        id="path989" />
     <path
        id="rect991"
-       style="fill:#008fff;fill-opacity:1;fill-rule:evenodd;stroke:#008fff;stroke-width:1.42277;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#f6f3eb;fill-opacity:1;fill-rule:evenodd;stroke:#f6f3eb;stroke-width:1.42277;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 38.04729,79.723906 -12.594579,3.148645 c 1.054986,2.246143 3.333308,3.794598 5.987748,3.794598 3.664479,0 6.614583,-2.950104 6.614583,-6.614583 0,-0.11018 -0.0025,-0.219831 -0.0078,-0.32866 z" />
   </g>
 </svg>

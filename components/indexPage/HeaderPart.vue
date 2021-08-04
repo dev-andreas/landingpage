@@ -5,24 +5,61 @@
       @intersecting="changeIntersection"
     />
     <div
-      class="flex flex-col items-center justify-center py-20 transition-all ease-in-out duration-1000"
-      :class="[intersects ? 'h-screen' : 'h-80']"
+      class="
+        flex flex-col
+        items-center
+        justify-center
+        py-20
+        transition-all
+        ease-in-out
+        duration-1000
+        h-screen
+      "
     >
       <div>
         <div class="flex items-center justify-center px-4">
           <img
-            src="../../assets/images/lumen_logo_light.svg"
-            alt="Lumen Logo"
-            class="h-32 md:h-48 mr-5 mb-3 transform hover:scale-110 transition ease-out duration-500"
+            src="../../assets/images/lumen_logo_blue.svg"
+            alt="Logo"
+            class="
+              h-32
+              md:h-48
+              mr-5
+              mb-3
+              transform
+              hover:scale-110
+              transition
+              ease-out
+              duration-500
+            "
           />
-          <div>
-            <h1 class="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold tracking-wider text-primary-600">
-              LUMEN DEV
-            </h1>
-            <h2 class="text-sm xs:text-lg sm:text-2xl md:text-3xl mt-3 font-light text-font-light">
+          <div class="flex flex-col-reverse">
+            <h1
+              class="
+                text-sm
+                xs:text-lg
+                sm:text-2xl
+                md:text-3xl
+                mt-3
+                font-light
+                text-font-light
+              "
+            >
               Webentwickler und Freelancer aus Ulm.
-            </h2>
-            <p class="text-xs sm:text-sm text-primary-600">Andreas Gerasimow</p>
+            </h1>
+            <p
+              class="
+                text-3xl
+                xs:text-4xl
+                sm:text-5xl
+                md:text-6xl
+                font-bold
+                tracking-wider
+                text-primary-600
+              "
+            >
+              Hallo, ich bin Andreas.
+            </p>
           </div>
         </div>
       </div>
@@ -70,7 +107,7 @@ export default {
 
 <style scoped>
 .bg {
-  background-image: url('~assets/images/coded.jpg');
+  background-image: url("~assets/images/coded.jpg");
 
   /* Center and scale the image nicely */
   background-color: #333333;
@@ -78,5 +115,4 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 </style>

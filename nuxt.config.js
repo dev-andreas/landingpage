@@ -6,7 +6,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Lumen Dev | Webentwickler und Freelancer aus Ulm.',
+    title: 'Andreas G. | Webentwickler und Freelancer aus Ulm.',
     htmlAttrs: {
       lang: 'de'
     },
@@ -52,6 +52,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
+    baseURL: 'http://192.168.178.21'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

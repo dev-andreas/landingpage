@@ -14,10 +14,9 @@
         <NuxtLink to="/" class="flex justify-center items-center">
           <img
             src="../assets/images/lumen_logo_black.svg"
-            alt="Lumen Logo"
+            alt="Lumen"
             class="h-10 my-2"
           />
-          <p class="text-xl font-light tracking-wider ml-2">LUMEN DEV</p>
         </NuxtLink>
         <!-- burger -->
         <div

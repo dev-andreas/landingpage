@@ -9,7 +9,14 @@
       sentinalName="about_me"
     >
       <h2
-        class="text-4xl sm:text-6xl font-extralight pb-3 px-1 border-b border-primary-600"
+        class="
+          text-4xl
+          sm:text-6xl
+          font-extralight
+          pb-3
+          px-1
+          border-b border-primary-600
+        "
       >
         Über mich
       </h2>
@@ -21,14 +28,28 @@
           endingClass="opacity-100 translate-x-0"
           sentinalName="about_me"
         >
-          <div class="flex flex-col xs:flex-row lg:flex-col items-center">
+          <div class="flex flex-col items-start">
             <img
-              src=""
+              src="../../assets/images/andreas_gerasimow.jpg"
               alt="Andreas Gerasimow"
-              class="bg-white w-32 sm:w-40 h-32 sm:h-40 md:w-60 md:h-60 object-cover rounded-full"
+              class="
+                bg-white
+                w-80
+                h-48
+                xs:w-96 xs:h-60
+                object-cover
+                rounded-md
+                shadow-lg
+              "
             />
             <div
-              class="border-l mt-5 xs:mt-0 xs:ml-5 lg:ml-0 lg:mt-5 border-primary-600 pl-3 text-xs sm:text-base"
+              class="
+                border-l
+                mt-5
+                border-primary-600
+                pl-3
+                text-base
+              "
             >
               <p class="font-bold">Andreas Gerasimow</p>
               <p class="font-light">Ulm, Baden-Württemberg</p>
@@ -42,7 +63,7 @@
           endingClass="opacity-100 translate-x-0"
           sentinalName="about_me"
         >
-          <div class="mt-10 md:mt-20 lg:mt-0 ml-0 lg:ml-20">
+          <div class="mt-10 md:mt-20 lg:mt-0 ml-0 lg:ml-20 w-72 xs:w-96 sm:w-120 md:w-168 lg:w-120">
             <div class="text-sm sm:text-lg">
               <h3 class="text-xl font-bold">Wer ich bin:</h3>
               Hallo, mein Name ist Andreas und ich bin seit meiner Kindheit
@@ -64,16 +85,16 @@
         startingClass="opacity-0 translate-y-10"
         endingClass="opacity-100 translate-x-0"
         sentinalName="about_me"
-        class="mt-5 md:mt-14"
+        class="mt-5 lg:mt-16"
       >
         <div class="text-sm sm:text-lg">
           <h3 class="text-xl font-bold">Warum bei mir?</h3>
           Sie haben den Vorteil, dass sich kein großes Unternehmen hinter mir
           verbirgt, welches Gehälter und Miete zahlen muss. Dadurch fallen für
-          Sie weniger Kosten an. Zweitens steht bei mir Qualität im Fokus. Ich
+          Sie weniger Kosten an. Außerdem steht bei mir Qualität im Fokus. Ich
           arbeite ungern an vielen Aufträgen auf einmal, denn darunter leidet
-          das individuelle Projekt. Außerdem ist mir Kundenzufriedenheit
-          wichtig, weshalb ich ehrlich bin und für Sie auch nach der
+          das individuelle Projekt. Die Kundenzufriedenheit ist mir am
+          wichtigsten, weshalb ich immer ehrlich bin und für Sie auch nach der
           Fertigstellung des Auftrags zur Verfügung stehe.
         </div>
       </IntersectionAnimation>
