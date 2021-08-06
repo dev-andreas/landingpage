@@ -51,9 +51,9 @@
           Ein Programm um Passwörter und Dateien zu verschlüsseln.
         </p>
         <a
-          href="https://github.com/dev-andreas/cryptoeditor"
+          href="/cryptoeditor"
           class="font-bold hover:text-primary-600 transition ease-out duration-200 mt-1"
-          >Source Code</a
+          >Mehr erfahren</a
         >
       </ProjectBox>
       <ProjectBox

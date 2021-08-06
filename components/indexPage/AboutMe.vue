@@ -28,15 +28,15 @@
           endingClass="opacity-100 translate-x-0"
           sentinalName="about_me"
         >
-          <div class="flex flex-col items-start">
+          <div class="flex flex-col sm:flex-row lg:flex-col items-center justify-center">
             <img
               src="../../assets/images/andreas_gerasimow.jpg"
               alt="Andreas Gerasimow"
               class="
                 bg-white
-                w-80
+                w-48
                 h-48
-                xs:w-96 xs:h-60
+                xs:w-60 xs:h-60
                 object-cover
                 rounded-md
                 shadow-lg
@@ -45,10 +45,10 @@
             <div
               class="
                 border-l
-                mt-5
                 border-primary-600
                 pl-3
                 text-base
+                ml-0 mt-5 sm:ml-5 sm:mt-0 lg:ml-0 lg:mt-5
               "
             >
               <p class="font-bold">Andreas Gerasimow</p>
@@ -63,7 +63,7 @@
           endingClass="opacity-100 translate-x-0"
           sentinalName="about_me"
         >
-          <div class="mt-10 md:mt-20 lg:mt-0 ml-0 lg:ml-20 w-72 xs:w-96 sm:w-120 md:w-168 lg:w-120">
+          <div class="mt-10 md:mt-20 lg:mt-0 ml-0 lg:ml-20">
             <div class="text-sm sm:text-lg">
               <h3 class="text-xl font-bold">Wer ich bin:</h3>
               Hallo, mein Name ist Andreas und ich bin seit meiner Kindheit
