@@ -52,7 +52,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'http://192.168.178.21'
+    baseURL: 'https://andreasgera.de'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -89,7 +89,7 @@ export default {
   },
 
   sitemap: {
-    hostname: 'https://dev-andreas.github.io',
+    hostname: 'https://andreasgera.de',
     gzip: true,
     
     exclude: [

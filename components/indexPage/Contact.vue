@@ -157,8 +157,9 @@ export default {
           this.response = "Nachricht gesendet. Ich melde mich.";
         })
         .catch((err) => {
+          console.log(err.response);
           if (err.response.status >= 500) {
-            this.error = 'Es gibt Probleme mit dem Server. Bitte versuchen Sie, uns per Mail zu kontaktieren.'
+            this.error = 'Es gibt Probleme mit dem Server. Bitte versuchen Sie mich per Mail zu kontaktieren.'
           } else {
             this.error = Object.values(err.response.data)[0][0];
           }
