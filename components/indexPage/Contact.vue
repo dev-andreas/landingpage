@@ -132,7 +132,7 @@ export default {
     };
   },
   methods: {
-    onSubmit() {
+    async onSubmit() {
       this.loading = true;
       this.response = "";
       this.error = "";
@@ -143,7 +143,7 @@ export default {
       data.append("email", this.email);
       data.append("message", this.message);
 
-      axios({
+      await axios({
         method: "POST",
         url: "/api/contact/",
         headers: {
@@ -165,8 +165,13 @@ export default {
           }
         })
         .finally(() => {
+          this.firstName = "";
+          this.lastName = "";
+          this.email = "";
+          this.message = "";
           this.loading = false;
         });
+      
     },
   },
 };
