@@ -11,6 +11,7 @@
       Seite konnte nicht geladen werden!
     </h2>
     <img class="w-80 sm:w-108 transform hover:-translate-y-3 ease-out duration-500" src="../assets/images/error.png" alt="Strauß mit Kopf im Sand">
+    <NuxtLink to="/" class="btn-primary bg-transparent mt-5">Zurück</NuxtLink>
   </div>
 </template>
 
