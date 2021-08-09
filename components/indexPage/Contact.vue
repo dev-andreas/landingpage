@@ -145,7 +145,7 @@ export default {
 
       await axios({
         method: "POST",
-        url: "/api/contact/",
+        url: "http://localhost:8000/api/contact/",
         headers: {
           "X-CSRFToken": "csrftoken",
         },

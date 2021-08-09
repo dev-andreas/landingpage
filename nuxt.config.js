@@ -41,6 +41,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
+    '@nuxtjs/google-analytics'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -52,7 +53,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'https://andreasgera.de'
+    baseURL: 'http://localhost:8000'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -86,6 +87,10 @@ export default {
         wght: [300, 400, 500, 600, 700]
       },
     }
+  },
+
+  googleAnalytics: {
+    id: 'UA-204398174-1',
   },
 
   sitemap: {
