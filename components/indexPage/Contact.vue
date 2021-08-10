@@ -10,9 +10,16 @@
       class="flex flex-col items-center"
     >
       <h2
-        class="text-4xl sm:text-6xl font-extralight pb-3 px-1 border-b border-primary-600"
+        class="
+          text-4xl
+          sm:text-6xl
+          font-extralight
+          pb-3
+          px-1
+          border-b border-primary-600
+        "
       >
-         Kontakt
+        Kontakt
       </h2>
       <p
         class="mx-5 text-lg sm:text-xl md:text-2xl lg:text-3xl mt-6 font-light"
@@ -31,7 +38,17 @@
           class="w-40 lg:w-108 h-40 lg:h-108 flex justify-center items-center"
         >
           <img
-            class="w-32 lg:w-64 h-32 lg:h-64 transform hover:scale-105 transition ease-out duration-300"
+            class="
+              w-32
+              lg:w-64
+              h-32
+              lg:h-64
+              transform
+              hover:scale-105
+              transition
+              ease-out
+              duration-300
+            "
             src="../../assets/images/mail.svg"
             alt="Mail"
           />
@@ -43,52 +60,53 @@
         sentinalName="contact"
         class="flex flex-col items-center mt-10 lg:mt-0"
       >
-        <div class="flex flex-col items-center sm:items-stretch">
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <label class="flex flex-col text-xs">
-              <input
-                type="text"
+        <form method="POST">
+          <div class="flex flex-col items-center sm:items-stretch">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <label class="flex flex-col text-xs">
+                <input
+                  type="text"
+                  name=""
+                  id="first_name"
+                  class="inpt"
+                  v-model="firstName"
+                />
+                Vorname
+              </label>
+              <label class="flex flex-col text-xs">
+                <input
+                  type="text"
+                  name=""
+                  id="last_name"
+                  class="inpt"
+                  v-model="lastName"
+                />
+                Nachname
+              </label>
+              <label class="flex flex-col text-xs">
+                <input
+                  type="email"
+                  name=""
+                  id="email"
+                  class="inpt"
+                  v-model="email"
+                />
+                E-Mail
+              </label>
+            </div>
+            <label class="flex flex-col mt-5 text-sm">
+              Nachricht
+              <textarea
                 name=""
-                id="first_name"
-                class="inpt"
-                v-model="firstName"
-              />
-              Vorname
-            </label>
-            <label class="flex flex-col text-xs">
-              <input
-                type="text"
-                name=""
-                id="last_name"
-                class="inpt"
-                v-model="lastName"
-              />
-              Nachname
-            </label>
-            <label class="flex flex-col text-xs">
-              <input
-                type="email"
-                name=""
-                id="email"
-                class="inpt"
-                v-model="email"
-              />
-              E-Mail
+                id="message"
+                cols="30"
+                rows="8"
+                class="tbox p-2"
+                v-model="message"
+              ></textarea>
             </label>
           </div>
-          <label class="flex flex-col mt-5 text-sm">
-            Nachricht
-            <textarea
-              name=""
-              id="message"
-              cols="30"
-              rows="8"
-              class="tbox p-2"
-              v-model="message"
-            ></textarea>
-          </label>
-        </div>
-         <div class="flex mt-5">
+          <div class="flex mt-5">
             <input
               class="btn-primary bg-transparent"
               type="button"
@@ -102,9 +120,32 @@
             </div>
           </div>
           <div class="mt-2">
-            <p class="text-primary-600 text-sm sm:text-base mx-3 sm:mx-0">{{ response }}</p>
-            <p v-if="error" class="text-red-600 text-sm sm:text-base mx-3 sm:mx-0">{{ error }}</p>
+            <p class="text-primary-600 text-sm sm:text-base mx-3 sm:mx-0">
+              {{ response }}
+            </p>
+            <p
+              v-if="error"
+              class="text-red-600 text-sm sm:text-base mx-3 sm:mx-0"
+            >
+              {{ error }}
+            </p>
+            <p class="text-sm w-72 sm:w-96">
+              Diese Website ist durch reCAPTCHA geschützt und es gelten die
+              <a
+                class="text-primary-600"
+                href="https://policies.google.com/privacy"
+                >Datenschutzbestimmungen</a
+              >
+              und
+              <a
+                class="text-primary-600"
+                href="https://policies.google.com/terms"
+                >Nutzungsbedingungen</a
+              >
+              von Google.
+            </p>
           </div>
+        </form>
       </IntersectionAnimation>
     </div>
   </article>
@@ -131,47 +172,56 @@ export default {
       error: "",
     };
   },
+
+  async mounted() {
+    try {
+      await this.$recaptcha.init();
+    } catch (e) {
+      console.error(e);
+    }
+  },
+
+  beforeDestroy() {
+    this.$recaptcha.destroy();
+  },
+
   methods: {
     async onSubmit() {
       this.loading = true;
       this.response = "";
       this.error = "";
 
+      const token = await this.$recaptcha.execute("login");
+
       const data = new FormData();
       data.append("first_name", this.firstName);
       data.append("last_name", this.lastName);
       data.append("email", this.email);
       data.append("message", this.message);
+      data.append("token", token);
 
       await axios({
         method: "POST",
-        url: "http://localhost:8000/api/contact/",
-        headers: {
-          "X-CSRFToken": "csrftoken",
-        },
+        url: "/api/contact/",
         data: data,
-        xsrfCookieName: "csrftoken",
-        xsrfHeaderName: "X-CSRFToken",
       })
         .then((res) => {
           this.response = "Nachricht gesendet. Ich melde mich.";
         })
         .catch((err) => {
-          console.log(err.response);
+          console.error(err.response);
           if (err.response.status >= 500) {
-            this.error = 'Es gibt Probleme mit dem Server. Bitte versuchen Sie mich per Mail zu kontaktieren.'
+            this.error =
+              "Es gibt Probleme mit dem Server. Bitte versuchen Sie mich per Mail zu kontaktieren.";
           } else {
             this.error = Object.values(err.response.data)[0][0];
           }
-        })
-        .finally(() => {
-          this.firstName = "";
-          this.lastName = "";
-          this.email = "";
-          this.message = "";
-          this.loading = false;
         });
-      
+      this.firstName = "";
+      this.lastName = "";
+      this.email = "";
+      this.message = "";
+      this.loading = false;
     },
   },
 };

@@ -24,6 +24,16 @@ export default {
     ]
   },
 
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push({
+        name: 'error_404',
+        path: '*',
+        component: resolve(__dirname, 'pages/404.vue')
+      })
+    }
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '~/assets/css/style.css',
@@ -48,12 +58,13 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/recaptcha',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'http://localhost:8000'
+    baseURL: 'http://andreasgera.de'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -80,6 +91,16 @@ export default {
     }
   },
 
+  publicRuntimeConfig: {
+    recaptcha: {
+      siteKey: process.env.RECAPTCHA_PUBLIC,
+    }
+  },
+
+  privateRuntimeConfig: {
+
+  },
+
   googleFonts: {
     download: false,
     families: {
@@ -96,11 +117,17 @@ export default {
   sitemap: {
     hostname: 'https://andreasgera.de',
     gzip: true,
-    
+
     exclude: [
       '/datenschutz',
       '/impressum',
     ],
-    
+
+  },
+
+  recaptcha: {
+    hideBadge: true,
+    siteKey: process.env.RECAPTCHA_PUBLIC,
+    version: 3,
   },
 }
