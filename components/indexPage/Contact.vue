@@ -106,6 +106,19 @@
               ></textarea>
             </label>
           </div>
+          <p class="text-sm text-center sm:text-left w-72 sm:w-108 mt-5">
+            Diese Website ist durch reCAPTCHA geschützt und es gelten die
+            <a
+              class="text-primary-600"
+              href="https://policies.google.com/privacy"
+              >Datenschutzbestimmungen</a
+            >
+            und
+            <a class="text-primary-600" href="https://policies.google.com/terms"
+              >Nutzungsbedingungen</a
+            >
+            von Google.
+          </p>
           <div class="flex mt-5">
             <input
               class="btn-primary bg-transparent"
@@ -128,21 +141,6 @@
               class="text-red-600 text-sm sm:text-base mx-3 sm:mx-0"
             >
               {{ error }}
-            </p>
-            <p class="text-sm w-72 sm:w-96">
-              Diese Website ist durch reCAPTCHA geschützt und es gelten die
-              <a
-                class="text-primary-600"
-                href="https://policies.google.com/privacy"
-                >Datenschutzbestimmungen</a
-              >
-              und
-              <a
-                class="text-primary-600"
-                href="https://policies.google.com/terms"
-                >Nutzungsbedingungen</a
-              >
-              von Google.
             </p>
           </div>
         </form>
@@ -202,7 +200,7 @@ export default {
 
       await axios({
         method: "POST",
-        url: "/api/contact/",
+        url: "http://localhost:8000/api/contact/",
         data: data,
       })
         .then((res) => {
@@ -216,12 +214,14 @@ export default {
           } else {
             this.error = Object.values(err.response.data)[0][0];
           }
+        })
+        .finally(() => {
+          this.firstName = "";
+          this.lastName = "";
+          this.email = "";
+          this.message = "";
+          this.loading = false;
         });
-      this.firstName = "";
-      this.lastName = "";
-      this.email = "";
-      this.message = "";
-      this.loading = false;
     },
   },
 };

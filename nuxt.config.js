@@ -64,7 +64,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'http://andreasgera.de'
+    baseURL: 'http://127.0.0.1:8000'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -126,7 +126,7 @@ export default {
   },
 
   recaptcha: {
-    hideBadge: true,
+    hideBadge: false,
     siteKey: process.env.RECAPTCHA_PUBLIC,
     version: 3,
   },
