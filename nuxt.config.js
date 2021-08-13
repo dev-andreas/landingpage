@@ -1,5 +1,5 @@
 const axios = require('axios');
-
+const hostname = 'https://andreasgera.de';
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'server',
@@ -60,11 +60,12 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/sitemap',
     '@nuxtjs/recaptcha',
+    '@nuxtjs/robots',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'http://127.0.0.1:8000'
+    baseURL: hostname,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -115,7 +116,7 @@ export default {
   },
 
   sitemap: {
-    hostname: 'https://andreasgera.de',
+    hostname: hostname,
     gzip: true,
 
     exclude: [
@@ -130,4 +131,8 @@ export default {
     siteKey: process.env.RECAPTCHA_PUBLIC,
     version: 3,
   },
+
+  robots: {
+    Sitemap: hostname + '/sitemap.xml'
+  }
 }

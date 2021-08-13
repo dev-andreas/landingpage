@@ -200,7 +200,7 @@ export default {
 
       await axios({
         method: "POST",
-        url: "http://localhost:8000/api/contact/",
+        url: "/api/contact/",
         data: data,
       })
         .then((res) => {
