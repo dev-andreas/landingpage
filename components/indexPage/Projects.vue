@@ -1,5 +1,15 @@
 <template>
-  <article class="flex flex-col items-center py-10 sm:py-20 my-10 sm:my-20" id="projects">
+  <article
+    class="
+      flex flex-col
+      items-center
+      py-10
+      sm:py-20
+      my-10
+      sm:my-20
+    "
+    id="projects"
+  >
     <IntersectionAnimation
       startingClass="opacity-0 translate-y-10"
       endingClass="opacity-100 translate-x-0"
@@ -7,11 +17,20 @@
       class="flex flex-col items-center"
     >
       <h2
-        class="text-4xl sm:text-6xl font-extralight pb-3 px-1 border-b border-primary-600"
+        class="
+          text-4xl
+          sm:text-6xl
+          font-extralight
+          pb-3
+          px-1
+          border-b border-primary-600
+        "
       >
         Projekte
       </h2>
-      <p class="mx-5 text-lg sm:text-xl md:text-2xl lg:text-3xl mt-6 font-light">
+      <p
+        class="mx-5 text-lg sm:text-xl md:text-2xl lg:text-3xl mt-6 font-light"
+      >
         Projekte die ich abgeschlossen habe, oder an denen ich immer noch
         arbeite:
       </p>
@@ -33,11 +52,19 @@
         :index="0"
       >
         <p class="text-center">
-          Website von einem Unternehmen, welches Ultraschall-Entgratmaschinen herstellt.
+          Website von einem Unternehmen, welches Ultraschall-Entgratmaschinen
+          herstellt.
         </p>
         <a
           href="https://ultratec-anlagen.de"
-          class="font-bold hover:text-primary-600 transition ease-out duration-200 mt-1"
+          class="
+            font-bold
+            hover:text-primary-600
+            transition
+            ease-out
+            duration-200
+            mt-1
+          "
           >Zur Website</a
         >
       </ProjectBox>
@@ -52,7 +79,14 @@
         </p>
         <a
           href="https://github.com/dev-andreas/cryptoeditor"
-          class="font-bold hover:text-primary-600 transition ease-out duration-200 mt-1"
+          class="
+            font-bold
+            hover:text-primary-600
+            transition
+            ease-out
+            duration-200
+            mt-1
+          "
           >Source code</a
         >
       </ProjectBox>
@@ -65,7 +99,14 @@
         <p class="text-center">Eine Web-App für anonyme Umfragen.</p>
         <a
           href="https://github.com/dev-andreas/pollapp"
-          class="font-bold hover:text-primary-600 transition ease-out duration-200 mt-1"
+          class="
+            font-bold
+            hover:text-primary-600
+            transition
+            ease-out
+            duration-200
+            mt-1
+          "
           >Source Code</a
         >
       </ProjectBox>
@@ -75,10 +116,19 @@
         title="Markdown Blog"
         :index="3"
       >
-        <p class="text-center">Eine Blog Web-App. Im Moment noch in der Entwicklung.</p>
+        <p class="text-center">
+          Eine Blog Web-App. Im Moment noch in der Entwicklung.
+        </p>
         <a
           href="https://github.com/dev-andreas/pollapp"
-          class="font-bold hover:text-primary-600 transition ease-out duration-200 mt-1"
+          class="
+            font-bold
+            hover:text-primary-600
+            transition
+            ease-out
+            duration-200
+            mt-1
+          "
           >Source Code</a
         >
       </ProjectBox>
@@ -96,15 +146,13 @@ export default {
     IntersectionAnimation,
   },
   data() {
-    return {
-
-    }
+    return {};
   },
   computed: {
     projectIndex() {
       return this.$store.state.projectIndex;
     },
-  }
+  },
 };
 </script>
 

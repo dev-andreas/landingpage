@@ -127,7 +127,7 @@ export default {
   },
 
   recaptcha: {
-    hideBadge: false,
+    hideBadge: true,
     siteKey: process.env.RECAPTCHA_PUBLIC,
     version: 3,
   },

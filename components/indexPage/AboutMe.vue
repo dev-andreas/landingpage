@@ -1,6 +1,6 @@
 <template>
   <article
-    class="flex flex-col items-center py-10 sm:py-20 my-10 sm:my-20"
+    class="flex flex-col items-center py-10 sm:py-20 my-10 sm:my-20 standard-grid-width"
     id="aboutme"
   >
     <IntersectionAnimation
@@ -21,7 +21,7 @@
         Über mich
       </h2>
     </IntersectionAnimation>
-    <div class="w-72 xs:w-96 sm:w-120 md:w-168 lg:w-216 xl:w-228">
+    <div>
       <div class="flex flex-col lg:flex-row items-center justify-center mt-16">
         <IntersectionAnimation
           startingClass="opacity-0 -translate-x-32"
@@ -64,19 +64,19 @@
           sentinalName="about_me"
         >
           <div class="mt-10 md:mt-20 lg:mt-0 ml-0 lg:ml-20">
-            <div class="text-sm sm:text-lg">
-              <h3 class="text-xl font-bold">Wer ich bin:</h3>
+            <div class="text-sm sm:text-xl">
+              <h3 class="text-xl sm:text-2xl font-bold">Wer ich bin:</h3>
               Hallo, mein Name ist Andreas und ich bin seit meiner Kindheit
               begeistert von Informatik. Im Jahr 2021 beginnt mein Studium,
               weshalb ich mich entschlossen habe Freelancer zu werden.
             </div>
-            <div class="text-sm sm:text-lg mt-5">
-              <h3 class="text-xl font-bold">Warum mache ich das?</h3>
+            <div class="text-sm sm:text-xl mt-5">
+              <h3 class="text-xl sm:text-2xl font-bold">Warum mache ich das?</h3>
               Flexibilität ist im Studium generell ziemlich wichtig, daher
               möchte ich selber entscheiden, wann und wie lange ich arbeite.
               Außerdem macht es mir Spaß neue Dinge zu lernen und mich als
               Person weiterzuentwickeln. Genau das ist der Grund weshalb ich
-              mich für eine freiberufliche Tätigkeit entschieden habe.
+              ein Freelancer werden wollte.
             </div>
           </div>
         </IntersectionAnimation>
@@ -87,8 +87,8 @@
         sentinalName="about_me"
         class="mt-5 lg:mt-16"
       >
-        <div class="text-sm sm:text-lg">
-          <h3 class="text-xl font-bold">Warum bei mir?</h3>
+        <div class="text-sm sm:text-xl">
+          <h3 class="text-xl sm:text-2xl font-bold">Warum bei mir?</h3>
           Sie haben den Vorteil, dass sich kein großes Unternehmen hinter mir
           verbirgt, welches Gehälter und Miete zahlen muss. Dadurch fallen für
           Sie weniger Kosten an. Außerdem steht bei mir Qualität im Fokus. Ich

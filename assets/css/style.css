@@ -46,6 +46,10 @@ body {
     backdrop-filter: blur(10px);
 }
 
+.standard-grid-width {
+    @apply w-72 2xs:w-80 xs:w-96 sm:w-132 md:w-168 lg:w-228 xl:w-300; /*2xl:w-360 */
+}
+
 /* ## Vue animations ## */
 
 .slide-top-enter-active {

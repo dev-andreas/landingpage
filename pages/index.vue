@@ -2,11 +2,12 @@
   <div>
     <HeaderPart />
     <NavBar :links="links" />
-    <div class="overflow-x-hidden">
-      <AboutMe />
+    <div class="overflow-x-hidden flex flex-col items-center">
       <Service />
+      <Pricing />
       <Technologies />
       <Projects />
+      <AboutMe />
       <Contact />
     </div>
   </div>
@@ -18,6 +19,7 @@ import NavBar from "../components/NavBar.vue";
 import Technologies from "../components/indexPage/Technologies.vue";
 import AboutMe from "../components/indexPage/AboutMe.vue";
 import Service from "../components/indexPage/Service.vue";
+import Pricing from "../components/indexPage/Pricing.vue";
 import Projects from "../components/indexPage/Projects.vue";
 import Contact from "../components/indexPage/Contact.vue";
 export default {
@@ -31,16 +33,18 @@ export default {
     Technologies,
     AboutMe,
     Service,
+    Pricing,
     Projects,
     Contact,
   },
   data() {
     return {
       links: [
-        { name: "Über mich", route: "#aboutme" },
         { name: "Dienstleistungen", route: "#service" },
+        { name: "Preise", route: "#pricing" },
         { name: "Technologien", route: "#tech" },
         { name: "Projekte", route: "#projects" },
+        { name: "Über mich", route: "#aboutme" },
       ],
     };
   },

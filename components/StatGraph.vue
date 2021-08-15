@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col items-start justify-center justify-self-center mt-auto w-120"
+    class="flex flex-col items-start justify-center justify-self-center"
   >
     <div
       v-for="item in items"

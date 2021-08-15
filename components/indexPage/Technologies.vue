@@ -1,5 +1,5 @@
 <template>
-  <article class="flex flex-col items-center py-10 sm:py-20 my-10 sm:my-20" id="tech">
+  <article class="flex flex-col items-center py-10 sm:py-20 my-10 sm:my-20 standard-grid-width" id="tech">
     <IntersectionAnimation
       startingClass="opacity-0 translate-y-10"
       endingClass="opacity-100 translate-x-0"
@@ -11,19 +11,19 @@
       >
         Technologien
       </h2>
-      <p class="mx-5 text-lg sm:text-xl md:text-2xl lg:text-3xl mt-6 font-light">
+      <p class="mx-5 text-lg sm:text-xl md:text-2xl lg:text-3xl mt-6 font-light text-center">
         Das wird für die Entwicklung eingesetzt. Darin kenne ich mich aus:
       </p>
     </IntersectionAnimation>
-    <div class="flex flex-col lg:flex-row lg:gap-10 mt-20 mx-32">
+    <div class="grid grid-cols-1 lg:grid-cols-3 mt-20 gap-20 place-items-center">
       <!-- Frameworks -->
       <IntersectionAnimation
         startingClass="opacity-0 -translate-x-32"
         endingClass="opacity-100 translate-x-0"
         sentinalName="service-title"
-        class="flex flex-col items-center"
+        class="flex flex-col items-center lg:col-span-2"
       >
-        <div class="flex flex-wrap items-center justify-center w-96 sm:w-132 xl:w-144">
+        <div class="flex flex-wrap items-center justify-center w-80 sm:w-132 lg:w-132 xl:w-168">
           <div class="framework">
             <img
               src="../../assets/images/django.svg"
@@ -59,11 +59,12 @@
         </div>
       </IntersectionAnimation>
 
+      <!-- Languages -->
       <IntersectionAnimation
         startingClass="opacity-0 translate-x-32"
         endingClass="opacity-100 translate-x-0"
         sentinalName="service-title"
-        class="flex flex-col items-center sm:mt-10 lg:mt-0 transform scale-60 xs:scale-75 sm:scale-100 lg:scale-75 xl:scale-100 w-132 h-72 lg:w-108 xl:w-132" 
+        class="flex flex-col items-center transform scale-70 2xs:scale-75 xs:scale-90 sm:scale-100 lg:scale-75 xl:scale-100" 
       >
           <StatGraph :items="items"/>
       </IntersectionAnimation>

@@ -1,6 +1,6 @@
 <template>
   <article
-    class="flex flex-col items-center py-10 sm:py-20 my-10 sm:my-20"
+    class="flex flex-col items-center py-10 sm:py-20 my-10 sm:my-20 standard-grid-width bg-red-100"
     id="contact"
   >
     <IntersectionAnimation
@@ -27,7 +27,7 @@
         Jetzt sind Sie an der Reihe, kontaktieren Sie mich unverbindlich:
       </p>
     </IntersectionAnimation>
-    <div class="flex flex-col lg:flex-row justify-center items-center mt-20">
+    <div class="grid lg:grid-cols-3 place-items-center gap-20 mt-20">
       <IntersectionAnimation
         startingClass="opacity-0 -translate-x-32"
         endingClass="opacity-100 translate-x-0"
@@ -35,14 +35,10 @@
         class="flex flex-col items-center"
       >
         <div
-          class="w-40 lg:w-108 h-40 lg:h-108 flex justify-center items-center"
+          class="flex justify-center items-center"
         >
           <img
             class="
-              w-32
-              lg:w-64
-              h-32
-              lg:h-64
               transform
               hover:scale-105
               transition
@@ -58,11 +54,11 @@
         startingClass="opacity-0 translate-y-10"
         endingClass="opacity-100 translate-x-0"
         sentinalName="contact"
-        class="flex flex-col items-center mt-10 lg:mt-0"
+        class="mt-10 lg:mt-0 lg:col-span-2"
       >
-        <form method="POST">
-          <div class="flex flex-col items-center sm:items-stretch">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <form class="" method="POST">
+          <div class="flex flex-col">
+            <div class="grid grid-cols-3 gap-5">
               <label class="flex flex-col text-xs">
                 <input
                   type="text"
@@ -106,8 +102,8 @@
               ></textarea>
             </label>
           </div>
-          <p class="text-sm text-center sm:text-left w-72 sm:w-108 mt-5">
-            Diese Website ist durch reCAPTCHA geschützt und es gelten die
+          <p class="text-sm text-center sm:text-left mt-5">
+            Dieses Kontaktformular ist durch reCAPTCHA geschützt und es gelten die
             <a
               class="text-primary-600"
               href="https://policies.google.com/privacy"

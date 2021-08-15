@@ -1,5 +1,5 @@
 <template>
-  <article class="flex flex-col items-center py-20 my-10 sm:my-20" id="service">
+  <article class="flex flex-col items-center py-20 my-10 sm:my-20 standard-grid-width" id="service">
     <IntersectionAnimation
       startingClass="opacity-0 translate-y-10"
       endingClass="opacity-100 translate-x-0"
@@ -17,14 +17,13 @@
       endingClass="opacity-100 translate-x-0"
       sentinalName="service-fullstack"
     >
-      <div class="flex flex-col lg:flex-row items-center justify-center mt-24">
+      <div class="grid grid-cols-1 lg:grid-cols-3 place-items-center gap-20 mt-24">
         <img
           src="../../assets/images/webdev.svg"
           alt="Webentwicklung"
-          class="w-52 sm:w-72 lg:w-80 mb-10 lg:mb-0 lg:mr-20"
         />
 
-        <div class="w-72 xs:w-80 sm:w-120 lg:w-132">
+        <div class="lg:col-span-2">
           <p class="text-2xl lg:text-3xl font-bold">
             Fullstack Webentwicklung.
           </p>
@@ -43,9 +42,9 @@
       sentinalName="service-frontend"
     >
       <div
-        class="flex flex-col-reverse md:flex-row items-center justify-center mt-32"
+        class="grid grid-cols-1 lg:grid-cols-3 place-items-center gap-20 mt-32"
       >
-        <div class="w-72 xs:w-80 sm:w-120 lg:w-168">
+        <div class="lg:col-span-2 order-last lg:order-first">
           <p class="text-xl lg:text-2xl font-bold">Frontend / Design</p>
           <p class="text-md sm:text-xl lg:text-2xl mt-5 font-light">
             Die Benutzeroberfläche ist die einzige Sache, die der Benutzer
@@ -60,8 +59,8 @@
         </div>
         <img
           src="../../assets/images/frontend.svg"
-          alt="Webdesign"
-          class="w-24 sm:w-36 lg:w-40 mb-10 md:mb-0 md:ml-16"
+          alt="Design"
+          class="w-40 sm:w-36 lg:w-40"
         />
       </div>
     </IntersectionAnimation>
@@ -71,17 +70,17 @@
       endingClass="opacity-100 translate-x-0"
       sentinalName="service-fullstack"
     >
-      <div class="flex flex-col md:flex-row items-center justify-center mt-32">
+      <div class="grid grid-cols-1 lg:grid-cols-3 place-items-center gap-20 mt-32">
         <img
           src="../../assets/images/backend.svg"
           alt="Datenbank"
-          class="w-24 sm:w-36 lg:w-40 md:mr-16 mb-10 md:mb-0"
+          class="w-40 sm:w-36 lg:w-40"
         />
-        <div class="w-72 xs:w-80 sm:w-120 lg:w-168">
+        <div class="lg:col-span-2">
           <p class="text-xl lg:text-2xl font-bold">Backend</p>
           <p class="text-md sm:text-xl lg:text-2xl mt-5 font-light">
             Manche Webanwendungen haben es nötig, Informationen und
-            Userdaten in Datenbanken zu speichern und zu verwalten. Über all
+            Benutzerdaten in Datenbanken zu speichern und zu verwalten. Über all
             dies kümmere ich mich, damit Sie sich nicht den Kopf zerbrechen
             müssen. Auch das Hosting ihrer Website können Sie mir überlassen,
             wenn Sie möchten.
@@ -102,4 +101,7 @@ export default {
 </script>
 
 <style>
+.grid-reverse {
+  direction: revert;
+}
 </style>
