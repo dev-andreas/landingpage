@@ -11,7 +11,7 @@
       >
         Technologien
       </h2>
-      <p class="mx-5 text-lg sm:text-xl md:text-2xl lg:text-3xl mt-6 font-bold text-center">
+      <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl mt-6 font-bold text-center">
         Das wird für die Entwicklung eingesetzt. Darin kenne ich mich aus:
       </p>
     </IntersectionAnimation>

@@ -31,19 +31,17 @@
       </h2>
       <p
         class="
-          mx-5
           text-lg
           sm:text-xl
           md:text-2xl
           lg:text-3xl
           mt-6
           font-bold
-          text-center
         "
       >
         Transparente und feste Preisgestaltung.
       </p>
-      <p class="text-sm sm:text-xl lg:text-2xl mt-7 font-light">
+      <p class="text-md sm:text-xl lg:text-2xl mt-5 font-light">
         Jedes Projekt ist einzigartig und individuell, trotzdem möchte ich die
         Preise so transparent wie möglich machen. Es gilt: Bei mir wird nicht
         die Zeit bezahlt, sondern das Ergebnis. Natürlich gibt es für jedes
