@@ -1,6 +1,14 @@
 <template>
   <article
-    class="flex flex-col items-center py-10 sm:py-20 my-10 sm:my-20 standard-grid-width"
+    class="
+      flex flex-col
+      items-center
+      py-10
+      sm:py-20
+      my-10
+      sm:my-20
+      standard-grid-width
+    "
     id="contact"
   >
     <IntersectionAnimation
@@ -22,7 +30,15 @@
         Kontakt
       </h2>
       <p
-        class="mx-5 text-lg sm:text-xl md:text-2xl lg:text-3xl mt-6 font-bold text-center"
+        class="
+          text-lg
+          sm:text-xl
+          md:text-2xl
+          lg:text-3xl
+          mt-6
+          font-bold
+          text-center
+        "
       >
         Jetzt sind Sie an der Reihe, kontaktieren Sie mich unverbindlich:
       </p>
@@ -34,9 +50,7 @@
         sentinalName="contact"
         class="flex flex-col items-center"
       >
-        <div
-          class="flex justify-center items-center"
-        >
+        <div class="flex justify-center items-center">
           <img
             class="
               transform
@@ -44,6 +58,9 @@
               transition
               ease-out
               duration-300
+              w-52
+              sm:w-80
+              lg:w-auto
             "
             src="../../assets/images/mail.svg"
             alt="Mail"
@@ -54,11 +71,21 @@
         startingClass="opacity-0 translate-y-10"
         endingClass="opacity-100 translate-x-0"
         sentinalName="contact"
-        class="mt-10 lg:mt-0 lg:col-span-2"
+        class="lg:col-span-2"
       >
         <form class="" method="POST">
           <div class="flex flex-col">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-5">
+            <div
+              class="
+                grid grid-cols-1
+                sm:grid-cols-2
+                md:grid-cols-3
+                lg:grid-cols-2
+                xl:grid-cols-3
+                place-items-center
+                gap-5
+              "
+            >
               <label class="flex flex-col text-xs">
                 <input
                   type="text"
@@ -103,7 +130,8 @@
             </label>
           </div>
           <p class="text-sm text-center sm:text-left mt-5">
-            Dieses Kontaktformular ist durch reCAPTCHA geschützt und es gelten die
+            Dieses Kontaktformular ist durch reCAPTCHA geschützt und es gelten
+            die
             <a
               class="text-primary-600"
               href="https://policies.google.com/privacy"

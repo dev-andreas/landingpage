@@ -36,7 +36,6 @@ export default {
   methods: {
     async intersect() {
       await setTimeout(() => {
-        console.log('intersecting');
         this.intersected = true;
       }, this.delay);
     },
