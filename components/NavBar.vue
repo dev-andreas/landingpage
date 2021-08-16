@@ -67,7 +67,7 @@
           ease-out
           duration-500
         "
-        :class="[open || !mobileView ? 'max-h-64' : 'max-h-0 scale-0']"
+        :class="[open || !mobileView ? 'max-h-72' : 'max-h-0 scale-0']"
       >
         <ul class="flex flex-col md:flex-row items-center mb-10 md:mb-0">
           <li
