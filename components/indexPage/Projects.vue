@@ -7,6 +7,7 @@
       sm:py-20
       my-10
       sm:my-20
+      standard-grid-width
     "
     id="projects"
   >

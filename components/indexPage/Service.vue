@@ -21,6 +21,7 @@
         <img
           src="../../assets/images/webdev.svg"
           alt="Webentwicklung"
+          class="w-80 lg:w-108"
         />
 
         <div class="lg:col-span-2">
@@ -60,7 +61,7 @@
         <img
           src="../../assets/images/frontend.svg"
           alt="Design"
-          class="w-40 sm:w-36 lg:w-40"
+          class="w-40 lg:w-56"
         />
       </div>
     </IntersectionAnimation>
@@ -74,7 +75,7 @@
         <img
           src="../../assets/images/backend.svg"
           alt="Datenbank"
-          class="w-40 sm:w-36 lg:w-40"
+          class="w-40 lg:w-56"
         />
         <div class="lg:col-span-2">
           <p class="text-xl lg:text-2xl font-bold">Backend</p>

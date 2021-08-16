@@ -1,6 +1,6 @@
 <template>
   <article
-    class="flex flex-col items-center py-10 sm:py-20 my-10 sm:my-20 standard-grid-width bg-red-100"
+    class="flex flex-col items-center py-10 sm:py-20 my-10 sm:my-20 standard-grid-width"
     id="contact"
   >
     <IntersectionAnimation
@@ -58,7 +58,7 @@
       >
         <form class="" method="POST">
           <div class="flex flex-col">
-            <div class="grid grid-cols-3 gap-5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-5">
               <label class="flex flex-col text-xs">
                 <input
                   type="text"
