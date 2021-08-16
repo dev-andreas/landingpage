@@ -151,8 +151,8 @@
         sentinalName="contact"
         class="lg:col-span-3 flex flex-col justify-center items-center"
       >
-        <p class="text-xl">Eine zusätzliche Seite: 30 €</p>
-        <p class="mt-5">Preise können sich in der Zukunft verändern.</p>
+        <p class="text-xl text-center">Eine zusätzliche Seite: 30 €</p>
+        <p class="mt-5 text-center">Preise können sich in der Zukunft verändern.</p>
       </IntersectionAnimation>
     </div>
   </article>
