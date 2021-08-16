@@ -37,8 +37,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="142.44791"
-     inkscape:cy="146.35495"
+     inkscape:cx="186.95282"
+     inkscape:cy="114.59436"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -105,13 +105,15 @@
        xml:space="preserve"
        id="text1075"
        style="line-height:1.25;font-family:sans-serif;font-size:10.58333333px;letter-spacing:0px;white-space:pre;shape-inside:url(#rect1077);" />
-    <text
-       xml:space="preserve"
+    <g
+       aria-label="?"
+       transform="matrix(0.49764478,0,0,0.49764478,35.85169,15.834478)"
        id="text1081"
-       style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;white-space:pre;shape-inside:url(#rect1083);fill:#008fff;fill-opacity:1;"
-       transform="matrix(0.49764478,0,0,0.49764478,35.85169,15.834478)"><tspan
-         x="43.251953"
-         y="60.622556"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:50.8px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Light';fill:#008fff;fill-opacity:1">?</tspan></tspan></text>
+       style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;white-space:pre;shape-inside:url(#rect1083);fill:#008fff;fill-opacity:1">
+      <path
+         d="m 51.430753,27.602556 q -3.4036,0 -6.1976,1.524 l -0.9652,-2.7432 q 1.0668,-0.6096 3.048,-1.1684 2.032,-0.5588 4.4704,-0.5588 2.6924,0 4.4704,0.7112 1.8288,0.6604 2.8956,1.778 1.0668,1.0668 1.524,2.4384 0.4572,1.3716 0.4572,2.6924 0,1.8288 -0.6604,3.2512 -0.6604,1.4224 -1.6764,2.6416 -1.016,1.2192 -2.1844,2.3368 -1.1176,1.1176 -2.1336,2.3368 -1.016,1.1684 -1.6764,2.54 -0.6604,1.3716 -0.6604,3.048 0,0.5588 0,0.8636 0,0.254 0.0508,0.508 h -2.6416 q -0.1016,-0.508 -0.1524,-1.0668 -0.0508,-0.6096 -0.0508,-1.2192 0,-1.7272 0.6096,-3.048 0.6096,-1.3716 1.524,-2.54 0.9144,-1.1684 1.9812,-2.1844 1.0668,-1.0668 1.9812,-2.1336 0.9144,-1.1176 1.524,-2.3368 0.6096,-1.27 0.6096,-2.8448 0,-1.4224 -0.508,-2.3368 -0.508,-0.9652 -1.3716,-1.524 -0.8128,-0.5588 -1.9304,-0.762 -1.1176,-0.2032 -2.3368,-0.2032 z m 2.4892,30.8356 q 0,1.1684 -0.762,1.9812 -0.7112,0.8128 -2.032,0.8128 -1.3208,0 -2.0828,-0.8128 -0.7112,-0.8128 -0.7112,-1.9812 0,-1.1684 0.7112,-1.9812 0.762,-0.8128 2.0828,-0.8128 1.3208,0 2.032,0.8128 0.762,0.8128 0.762,1.9812 z"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:50.8px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Light';fill:#008fff;fill-opacity:1"
+         id="path842" />
+    </g>
   </g>
 </svg>
