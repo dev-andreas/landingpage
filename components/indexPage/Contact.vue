@@ -22,7 +22,7 @@
         Kontakt
       </h2>
       <p
-        class="mx-5 text-lg sm:text-xl md:text-2xl lg:text-3xl mt-6 font-light"
+        class="mx-5 text-lg sm:text-xl md:text-2xl lg:text-3xl mt-6 font-bold text-center"
       >
         Jetzt sind Sie an der Reihe, kontaktieren Sie mich unverbindlich:
       </p>

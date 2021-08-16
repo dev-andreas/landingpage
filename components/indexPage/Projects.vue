@@ -30,7 +30,7 @@
         Projekte
       </h2>
       <p
-        class="mx-5 text-lg sm:text-xl md:text-2xl lg:text-3xl mt-6 font-light"
+        class="mx-5 text-lg sm:text-xl md:text-2xl lg:text-3xl mt-6 font-bold text-center"
       >
         Projekte die ich abgeschlossen habe, oder an denen ich immer noch
         arbeite:
@@ -41,7 +41,7 @@
       endingClass="opacity-100 translate-x-0"
       sentinalName="projects_tap"
     >
-      <p class="text-xs sm:text-base mx-2 mt-20 mb-10 font-bold">
+      <p class="text-xs sm:text-base mx-2 mt-20 mb-10 font-light text-center">
         Berühre die einzelnen Kästchen, um mehr zu erfahren:
       </p>
     </IntersectionAnimation>
