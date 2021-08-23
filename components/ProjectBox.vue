@@ -6,7 +6,7 @@
     class="mt-5 mx-5 sm:mt-10 sm:mx-10"
   >
     <div
-      class="bgg w-80 h-60 p-5 bg-repeat bg-clip-content border border-primary-600 flex flex-col justify-center items-center"
+      class="bgg w-80 h-60 p-5 bg-repeat bg-clip-content flex flex-col justify-center items-center border border-primary-600 shadow-md rounded-sm"
       @mouseover="onHover()"
       @mouseleave="onLeave()"
     >

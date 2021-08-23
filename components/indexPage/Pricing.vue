@@ -48,12 +48,12 @@
         Preispaket trotzdem Möglichkeiten zur Anpassung.
       </p>
     </IntersectionAnimation>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-32 mt-20">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-16 mt-20">
       <IntersectionAnimation
         startingClass="opacity-0 -translate-x-10"
         endingClass="opacity-100 translate-x-0"
         sentinalName="contact"
-        class="flex flex-col items-center"
+        class="flex flex-col items-center border border-font-dark bg-white shadow-md rounded-sm p-10 transform hover:-translate-y-4 transition-all ease-out duration-75"
       >
         <h3
           class="text-5xl font-light mb-10 text-center"
@@ -75,18 +75,16 @@
           <li class="font-bold">1 Seite</li>
           <li>Bis zu 8 Abschnitten</li>
           <li>
-            Perfekt für Landingpages oder Portfolios. Natürlich auch für
-            beliebige andere Dinge.
+            Perfekt für Landingpages oder Portfolios.
           </li>
           <li>On-Page Suchmaschinenoptimierung</li>
-          <li>Optionales Kontaktformular</li>
         </ul>
       </IntersectionAnimation>
       <IntersectionAnimation
-        startingClass="opacity-0 translate-y-10"
-        endingClass="opacity-100 translate-y-0"
+        startingClass="opacity-0 -translate-x-10"
+        endingClass="opacity-100 translate-x-0"
         sentinalName="contact"
-        class="flex flex-col items-center"
+        class="flex flex-col items-center border border-font-dark bg-white shadow-md rounded-sm p-10 transform hover:-translate-y-4 transition-all ease-out duration-75"
       >
         <h3
           class="text-5xl font-light mb-10 text-center"
@@ -107,18 +105,17 @@
         >
           <li class="font-bold">10 Seiten</li>
           <li>
-            Eine Homepage mit 9 Unterseiten. Geeignet für kleine Unternehmen
-            bzw. Start-Ups um über ihre Produkte oder Dienstleistungen zu
-            informieren.
+            Eine Homepage mit 9 Unterseiten. Geeignet für kleine und mittlere Unternehmen
+            bzw. Start-Ups.
           </li>
           <li>On-Page Suchmaschinenoptimierung</li>
         </ul>
       </IntersectionAnimation>
       <IntersectionAnimation
-        startingClass="opacity-0 translate-x-10"
+        startingClass="opacity-0 -translate-x-10"
         endingClass="opacity-100 translate-x-0"
         sentinalName="contact"
-        class="flex flex-col items-center"
+        class="flex flex-col items-center border border-font-dark bg-white shadow-md rounded-sm p-10 transform hover:-translate-y-4 transition-all ease-out duration-75"
       >
         <h3
           class="text-5xl font-light mb-10 text-center"
@@ -140,14 +137,14 @@
           <li class="font-bold">Individuelle Gestaltung</li>
           <li>
             Sie haben einen Wunsch, welcher über eine klassische Website
-            hinausgeht, z.B. eine bestimmte Web-App? Setzen Sie sich mit mir in
+            hinausgeht, z.B. ein Shop oder eine Web-App? Setzen Sie sich mit mir in
             Verbindung und wir finden eine Lösung.
           </li>
         </ul>
       </IntersectionAnimation>
       <IntersectionAnimation
         startingClass="opacity-0 translate-y-10"
-        endingClass="opacity-100 translate-x-0"
+        endingClass="opacity-100 translate-y-0"
         sentinalName="contact"
         class="lg:col-span-3 flex flex-col justify-center items-center"
       >
