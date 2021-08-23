@@ -53,7 +53,7 @@
         startingClass="opacity-0 -translate-x-10"
         endingClass="opacity-100 translate-x-0"
         sentinalName="contact"
-        class="flex flex-col items-center border border-font-dark bg-white shadow-md rounded-sm p-10 transform hover:-translate-y-4 transition-all ease-out duration-75"
+        class="flex flex-col items-center border border-font-dark shadow-md rounded-sm p-10 transform hover:-translate-y-4 transition-all ease-out duration-75"
       >
         <h3
           class="text-5xl font-light mb-10 text-center"
@@ -84,7 +84,7 @@
         startingClass="opacity-0 -translate-x-10"
         endingClass="opacity-100 translate-x-0"
         sentinalName="contact"
-        class="flex flex-col items-center border border-font-dark bg-white shadow-md rounded-sm p-10 transform hover:-translate-y-4 transition-all ease-out duration-75"
+        class="flex flex-col items-center border border-font-dark shadow-md rounded-sm p-10 transform hover:-translate-y-4 transition-all ease-out duration-75"
       >
         <h3
           class="text-5xl font-light mb-10 text-center"
@@ -115,7 +115,7 @@
         startingClass="opacity-0 -translate-x-10"
         endingClass="opacity-100 translate-x-0"
         sentinalName="contact"
-        class="flex flex-col items-center border border-font-dark bg-white shadow-md rounded-sm p-10 transform hover:-translate-y-4 transition-all ease-out duration-75"
+        class="flex flex-col items-center border border-font-dark shadow-md rounded-sm p-10 transform hover:-translate-y-4 transition-all ease-out duration-75"
       >
         <h3
           class="text-5xl font-light mb-10 text-center"
