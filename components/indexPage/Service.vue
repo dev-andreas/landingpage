@@ -21,7 +21,7 @@
         <img
           src="../../assets/images/webdev.svg"
           alt="Webentwicklung"
-          class="w-80 lg:w-108"
+          class="w-72 lg:w-108"
         />
 
         <div class="lg:col-span-2">

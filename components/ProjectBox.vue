@@ -79,8 +79,5 @@ export default {
 </script>
 
 <style scoped>
-.bgg {
-  background-image: url("~assets/images/diagonal_line.svg");
-  background-size: 1rem;
-}
+
 </style>
