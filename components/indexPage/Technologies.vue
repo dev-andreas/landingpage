@@ -5,8 +5,8 @@
       items-center
       py-10
       sm:py-20
-      my-10
-      sm:my-20
+      mt-10
+      sm:mt-20
       standard-grid-width
     "
     id="tech"
@@ -44,7 +44,7 @@
       </p>
     </IntersectionAnimation>
     <div
-      class="grid grid-cols-1 lg:grid-cols-3 mt-20 gap-20 place-items-center"
+      class="grid grid-cols-1 lg:grid-cols-3 mt-10 lg:mt-20 lg:gap-20 place-items-center"
     >
       <!-- Frameworks -->
       <IntersectionAnimation
