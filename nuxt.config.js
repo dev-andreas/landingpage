@@ -51,7 +51,8 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
+    '@nuxtjs/pwa',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -134,5 +135,19 @@ export default {
 
   robots: {
     Sitemap: hostname + '/sitemap.xml'
+  },
+
+  pwa: {
+    meta: {
+      title: 'Freelancer',
+      author: 'Andreas G.',
+    },
+    manifest: {
+      name: 'Andreas G. | Webentwickler und Freelancer aus Ulm.',
+      short_name: 'Freelancer Ulm',
+      description: '',
+      lang: 'de',
+    },
+
   }
 }
