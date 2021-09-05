@@ -29,7 +29,7 @@
             Fullstack Webentwicklung.
           </p>
           <p class="text-md sm:text-xl lg:text-2xl mt-5 font-light">
-            Ich entwickle Webseiten für Unternehmen und Personen. Benötigen Sie
+            Ich entwickle Websites für Unternehmen und Privatpersonen. Benötigen Sie
             eine professionelle Landingpage, Website oder eine spezielle
             Web-App? Dann sind Sie hier genau richtig.
           </p>

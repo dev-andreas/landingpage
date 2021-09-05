@@ -29,12 +29,7 @@
       <p>
         <strong>Kontakt:</strong> <br />
         Telefon: 01575 3223015<br />
-        E-Mail: <a href="mailto:max@muster.de">andreas.gerasimow12@gmail.com</a><br />
-      </p>
-      <br />
-      <p>
-        <strong>Umsatzsteuer-ID: </strong> <br />
-        Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: Noch nicht angekommen.<br /><br />
+        E-Mail: <a href="mailto:andreas.gerasimow12@gmail.com">andreas.gerasimow12@gmail.com</a><br />
       </p>
       <br />
       <p class="mt-10">
