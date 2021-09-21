@@ -24,8 +24,8 @@ import Projects from "../components/indexPage/Projects.vue";
 import Contact from "../components/indexPage/Contact.vue";
 export default {
   transition: {
-      name: "slide-bottom",
-      mode: "out-in",
+    name: "slide-bottom",
+    mode: "out-in",
   },
   components: {
     HeaderPart,
@@ -59,8 +59,21 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "Sie wollen eine professionelle Website oder Webanwendung für sich oder ihr Unternehmen? Dann sind Sie hier genau richtig. Kostengünstig ✓ Schön ✓ Performant ✓",
+          "Sie wollen eine professionelle Website oder Webanwendung für sich oder ihr Unternehmen? Dann sind Sie hier genau richtig. Kostengünstig ✓ Gutaussehend ✓ Performant ✓",
       },
+      {
+        hid: "og:title",
+        name: "og:title",
+        content: "Andreas G. | Webentwickler und Freelancer aus Ulm.",
+      },
+      {
+        hid: "og:description",
+        name: "og:description",
+        content:
+          "Sie wollen eine professionelle Website oder Webanwendung für sich oder ihr Unternehmen? Dann sind Sie hier genau richtig. Kostengünstig ✓ Gutaussehend ✓ Performant ✓",
+      },
+      { hid: "og:image", name: "og:image", content: "/og_image.jpg" },
+      { hid: "og:url", name: "og:url", content: "https://www.andreasgera.de/" },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },

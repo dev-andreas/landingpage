@@ -71,8 +71,6 @@
           shadow-md
           rounded-sm
           p-5
-          bgg
-          bg-clip-content
         "
       >
         <div class="p-5 flex flex-col items-center">
@@ -99,8 +97,6 @@
           shadow-md
           rounded-sm
           p-5
-          bgg
-          bg-clip-content
         "
       >
         <div class="p-5 flex flex-col items-center">
@@ -129,8 +125,6 @@
           shadow-md
           rounded-sm
           p-5
-          bgg
-          bg-clip-content
         "
       >
         <div class="p-5 flex flex-col items-center">
