@@ -33,7 +33,7 @@ body {
 }
 
 .inpt {
-    @apply border-b border-font-dark w-52 py-1 hover:bg-backg-light focus:bg-backg-light focus:border-primary-400 transition ease-out duration-200;
+    @apply border-b border-font-dark py-1 hover:bg-backg-light focus:bg-backg-light focus:border-primary-400 transition ease-out duration-200;
 }
 
 .tbox {

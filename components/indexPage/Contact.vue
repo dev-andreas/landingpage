@@ -91,7 +91,7 @@
                   type="text"
                   name=""
                   id="first_name"
-                  class="inpt"
+                  class="inpt w-72 2xs:w-80 xs:w-96 sm:w-60 md:w-52 lg:w-64 xl:w-60"
                   v-model="firstName"
                 />
                 Vorname
@@ -101,7 +101,7 @@
                   type="text"
                   name=""
                   id="last_name"
-                  class="inpt"
+                  class="inpt w-72 2xs:w-80 xs:w-96 sm:w-60 md:w-52 lg:w-64 xl:w-60"
                   v-model="lastName"
                 />
                 Nachname
@@ -111,7 +111,7 @@
                   type="email"
                   name=""
                   id="email"
-                  class="inpt"
+                  class="inpt w-72 2xs:w-80 xs:w-96 sm:w-60 md:w-52 lg:w-64 xl:w-60"
                   v-model="email"
                 />
                 E-Mail
@@ -234,7 +234,7 @@ export default {
           console.error(err.response);
           if (err.response.status >= 500) {
             this.error =
-              "Es gibt Probleme mit dem Server. Bitte versuchen Sie mich per Mail zu kontaktieren.";
+              "Server befindet sich im Moment in der Wartung. Bitte kontaktieren Sie mich per E-Mail.";
           } else {
             this.error = Object.values(err.response.data)[0][0];
           }

@@ -23,7 +23,6 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
     ]
   },
-
   router: {
     extendRoutes(routes, resolve) {
       routes.push({
