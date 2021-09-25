@@ -119,8 +119,7 @@ export default {
     gzip: true,
 
     exclude: [
-      '/datenschutz',
-      '/impressum',
+      '/404',
     ],
 
   },
