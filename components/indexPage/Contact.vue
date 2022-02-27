@@ -152,7 +152,6 @@
             />
             <LoadingShape v-if="loading" />
             <div class="items-center ml-5">
-              <p class="font-bold text-xs">+49 1575 3223015</p>
               <p class="font-bold text-xs">andreas.gerasimow12@gmail.com</p>
             </div>
           </div>

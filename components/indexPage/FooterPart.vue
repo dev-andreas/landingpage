@@ -3,7 +3,7 @@
     class="flex flex-col md:flex-row items-center justify-center md:justify-between h-52 md:h-40 bg-backg-dark px-10"
   >
     <div class="text">
-      <p class="text-font-light">&copy; 2021 Andreas Gerasimow</p>
+      <p class="text-font-light">&copy; 2022 Andreas Gerasimow</p>
       <NuxtLink to="/impressum" class="text-primary-600 font-bold mr-2">Impressum</NuxtLink>
       <NuxtLink to="/datenschutz" class="text-primary-600 font-bold">Datenschutzerklärung</NuxtLink>
     </div>

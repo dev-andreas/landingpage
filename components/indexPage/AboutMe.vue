@@ -74,7 +74,6 @@
             <p class="font-bold">Andreas Gerasimow</p>
             <p class="font-light">Ulm, Baden-Württemberg</p>
             <p class="font-light">andreas.gerasimow12@gmail.com</p>
-            <p class="font-light">+49 1575 3223015</p>
           </div>
         </div>
       </IntersectionAnimation>
